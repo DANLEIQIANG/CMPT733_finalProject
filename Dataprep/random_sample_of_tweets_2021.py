@@ -1,6 +1,7 @@
 # Random sampling of tweet data in the second half of the year 2021.
 # Place_country limits in United States(US), Australia(AU), Canada(CA), New Zealand(NZ), United Kingdom(GB)
 # Limit tweets published in English
+# From 2021-07-01 to 2021-12-31, filtered 5 minutes' tweets from AM and PM respectively
 import random
 import time
 from datetime import datetime, timedelta, date
@@ -17,7 +18,7 @@ def randomtimes(start, end, duration, frmt="%Y-%m-%dT%H:%M:%SZ"):
 
 
 def main():
-    begin = date(2021, 9, 1)
+    begin = date(2021, 7, 1)
     end = date(2021, 12, 31)
     frmt = "%Y-%m-%dT%H:%M:%SZ"
     duration = 5
@@ -33,7 +34,7 @@ def main():
         month = str(day.month)
         if day.month < 10:
             month = '0' + month
-        filename = '../Dataset/' + str(day.year) + '_' + month + '.csv'
+        filename = '../Dataset/tweets_2021/' + str(day.year) + '_' + month + '.csv'
         morning_s = str(day) + 'T00:00:00Z'
         morning_e = str(day) + 'T12:00:00Z'
         morning_e = (datetime.strptime(morning_e, frmt) - timedelta(minutes=duration)).strftime(frmt)
