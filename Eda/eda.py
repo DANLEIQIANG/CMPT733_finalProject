@@ -15,6 +15,8 @@ def main(dataset):
         nltk.download('punkt')
     except:
         pass
+    outpath = 'EDA/image/'
+    
         
     #load the dataset
     df = pd.read_csv(dataset)
@@ -26,7 +28,7 @@ def main(dataset):
     plt.xlabel('Country')
     plt.ylabel('Count')
     plt.gca().invert_yaxis()
-    plt.savefig('country_distribution.png')
+    plt.savefig(outpath + 'country_distribution.png')
     plt.close()
 
     #token distribution
@@ -54,7 +56,7 @@ def main(dataset):
     plt.xlabel('Frequency')
     plt.ylabel('Words')
     plt.gca().invert_yaxis()
-    plt.savefig('token_distribution.png')
+    plt.savefig(outpath + 'token_distribution.png')
     plt.close()
 
     #word count
@@ -63,7 +65,7 @@ def main(dataset):
     sns.boxplot(x=df['text_length']).set_title('Word count in Each Tweet')
     plt.title('Word count in Each Tweet')
     plt.xlabel('Length')
-    plt.savefig('box_plot_tweet_length.png')
+    plt.savefig(outpath + 'box_plot_tweet_length.png')
     plt.close()
 
     #user_created_time
@@ -73,7 +75,7 @@ def main(dataset):
     plt.title('user_created_time')
     plt.xlabel('Year')
     plt.ylabel('Frequency')
-    plt.savefig('user_created.png')
+    plt.savefig(outpath + 'user_created.png')
     plt.close()
 
     #account history by country
@@ -85,7 +87,7 @@ def main(dataset):
     plt.title('average account history by history')
     plt.xlabel('Country')
     plt.ylabel('Years')
-    plt.savefig('history_by_country.png')
+    plt.savefig(outpath + 'history_by_country.png')
     plt.close()
 
 
