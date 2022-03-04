@@ -17,7 +17,6 @@ def main(dataset):
         pass
     outpath = 'EDA/image/'
     
-        
     #load the dataset
     df = pd.read_csv(dataset)
     
@@ -81,10 +80,9 @@ def main(dataset):
     #account history by country
     df['account_history'] = df['user_created_time'].apply(lambda x:(datetime.now()-x).days/365)
     aggd = df.groupby('geo_country_code').mean()
-    fig = plt.figure()
-    ax = fig.add_axes([0,0,1,1])
-    ax.bar(aggd.index,aggd['account_history'])
-    plt.title('average account history by history')
+    plt.figure()
+    plt.bar(aggd.index.tolist(),aggd['account_history'])
+    plt.title('average account history by country')
     plt.xlabel('Country')
     plt.ylabel('Years')
     plt.savefig(outpath + 'history_by_country.png')
