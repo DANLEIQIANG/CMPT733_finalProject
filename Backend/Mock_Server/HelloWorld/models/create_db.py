@@ -19,4 +19,7 @@ db.create_all()
 #https://www.cnblogs.com/beifangls/p/9782172.html
 # search
 stus = Article.query.all()
-print(stus)
+for item in stus:
+    # print(item.title)
+    # print(item.content)
+    print(item.title)
