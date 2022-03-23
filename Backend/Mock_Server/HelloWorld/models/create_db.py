@@ -3,7 +3,11 @@ from flask import Flask, request, json, Response, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 import config
-
+'''
+本地创建新数据库 twitter
+修改config.py里的用户名和密码
+运行这个文件
+'''
 app = Flask(__name__)
 app.config.from_object(config)
 db = SQLAlchemy(app)
