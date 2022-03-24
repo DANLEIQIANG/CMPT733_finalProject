@@ -18,14 +18,20 @@ class Overview extends Component {
         startTime:undefined,//开始时间
         endTime:undefined,  //结束时间
         labels:[],
-        friendly:[],
-        unfriendly:[],
+        positive:[],
+        negative:[],
+        neutral:[],
         overall:[],
         typeClass: [],
         numClass :[],
         infoClass :[],
         chartList:[],
         classItems:[],
+        country:[],
+        positive_country:[],
+        negative_country:[],
+        neutral_country:[],
+
     }
     onPickerChange(a,dateString){
         this.setState({
@@ -36,12 +42,13 @@ class Overview extends Component {
     }
     mixChartData(){
         let {startTime, endTime} = this.state
-        axios.get('http://localhost:3000/overview/key_metrics_byday/'+startTime+'_'+endTime).then(
+        axios.get('http://localhost:3000/api/timeselector/'+startTime+'_'+endTime).then(
             response => {
                 this.setState({
                     labels:response.data.date,
-                    friendly:response.data.friendly,
-                    unfriendly:response.data.unfriendly,
+                    positive:response.data.positive,
+                    negative:response.data.negative,
+                    neutral:response.data.neutral,
                     overall:response.data.overall,
                 })
             },
@@ -50,12 +57,12 @@ class Overview extends Component {
     }
     pieChartData(){
         let {startTime, endTime} = this.state
-        axios.get('http://localhost:3000/overview/key_metrics/'+startTime+'_'+endTime).then(
+        axios.get('http://localhost:3000/api/timeselector/'+startTime+'_'+endTime).then(
             response => {
                 this.setState({
-                    typeClass:response.data.info.filter(val=>val.type!='Total').map(val => val.type),
-                    numClass:response.data.info.filter(val=>val.type!='Total').map(val => val.num),
-                    infoClass:response.data.info.filter(val=>val.type!='Total').map((value) => {return{name: value.type,value:value.num}})
+                    typeClass:response.data.total.map(val => val.type),
+                    numClass:response.data.total.map(val => val.num),
+                    infoClass:response.data.total.map((value) => {return{name: value.type,value:value.num}})
                 })
             },
             error => {console.log("Pie request error")}
@@ -63,10 +70,10 @@ class Overview extends Component {
     }
     panelGroupData(){
         const {startTime, endTime} = this.state
-        axios.get('http://localhost:3000/overview/key_metrics/'+startTime+'_'+endTime).then(
+        axios.get('http://localhost:3000/api/timeselector/'+startTime+'_'+endTime).then(
             response => {
                 this.setState({
-                    chartList : response.data.info
+                    chartList: response.data.total
                 })
             },
             error => {console.log("Panel Group request error")}
@@ -85,6 +92,22 @@ class Overview extends Component {
         )
     }
 
+    barChartData(){
+        const {startTime, endTime} = this.state
+        axios.get('http://localhost:3000/api/country/'+startTime+'_'+endTime).then(
+            response => {
+                this.setState({
+                    country : response.data.country,
+                    positive_coutry : response.data.positive,
+                    negative_country : response.data.negative,
+                    neutral_country : response.data.neutral
+
+                })
+            },
+            error => {console.log("Panel Group request error")}
+        )
+    }
+
     render() {
         console.log(this.state)
         return (
@@ -92,9 +115,9 @@ class Overview extends Component {
                 <div>
                     Please select time preiod:&nbsp;&nbsp;&nbsp;
                     <RangePicker
-                        defaultValue={[moment('2019-09-03', dateFormat), moment('2019-11-22', dateFormat)]}
+                        defaultValue={[moment('2022-01-01', dateFormat), moment('2022-01-07', dateFormat)]}
                         format={dateFormat}
-                        onChange = {(a,b) =>{this.onPickerChange(a,b);this.mixChartData();this.pieChartData();this.panelGroupData();this.boxCardData()}}
+                        onChange = {(a,b) =>{this.onPickerChange(a,b);this.mixChartData();this.pieChartData();this.panelGroupData();this.boxCardData();this.barChartData()}}
                         placeholder={['Start Time','End Time']}
                         allowClear = {false}
                     />
@@ -118,13 +141,11 @@ class Overview extends Component {
                     <h1>Twitter Cyberbullying Analysis: </h1>
                     <MixChart {...this.state}/>
 
-                    <h1>Twitter Cyberbullying Analysis: </h1>
-                    <BoxCard {...this.state}/>
+
                     <br />
                     <h1>Twitter Cyberbullying Analysis: </h1>
-                    <BarChart />
-                    <h1>Twitter Cyberbullying Analysis: </h1>
-                    <LineChart />
+                    <BarChart {...this.state}/>
+
 
 
 

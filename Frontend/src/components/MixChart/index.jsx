@@ -8,9 +8,10 @@ export  default  class MixChart extends Component {
         super(props);
         this.state = {
             chart: null,
-            friendly : this.props.friendly,
+            positive : this.props.positive,
             labels: this.props.labels,
-            unfriendly: this.props.unfriendly,
+            negative: this.props.negative,
+            neutral : this.props.neutral,
             overall : this.props.overall,
         };
     }
@@ -24,10 +25,11 @@ export  default  class MixChart extends Component {
             this.resize();
         }
         this.setState({
-            labels: nextProps.labels,
-            friendly: nextProps.friendly,
-            unfriendly: nextProps.unfriendly,
-            overall : nextProps.overall,
+            positive : this.props.positive,
+            labels: this.props.labels,
+            negative: this.props.negative,
+            neutral : this.props.neutral,
+            overall : this.props.overall,
         })
 
     }
@@ -99,7 +101,7 @@ export  default  class MixChart extends Component {
                 textStyle: {
                     color: "#90979c",
                 },
-                data: ["female", "male", "average"],
+                data: ["Positive", "Negative", "Neutral","Overall"],
             },
             calculable: true,
             xAxis: [
@@ -176,7 +178,7 @@ export  default  class MixChart extends Component {
             ],
             series: [
                 {
-                    name: "female",
+                    name: "Positive",
                     type: "bar",
                     stack: "total",
                     barMaxWidth: 35,
@@ -196,11 +198,11 @@ export  default  class MixChart extends Component {
                             },
                         },
                     },
-                    data: this.state.friendly,
+                    data: this.state.positive,
                 },
 
                 {
-                    name: "male",
+                    name: "Negative",
                     type: "bar",
                     stack: "total",
                     itemStyle: {
@@ -216,10 +218,29 @@ export  default  class MixChart extends Component {
                             },
                         },
                     },
-                    data: this.state.unfriendly,
+                    data: this.state.negative,
                 },
                 {
-                    name: "average",
+                    name: "Neutral",
+                    type: "bar",
+                    stack: "total",
+                    itemStyle: {
+                        normal: {
+                            color: "rgb(45,148,211)",
+                            barBorderRadius: 0,
+                            label: {
+                                show: true,
+                                position: "top",
+                                formatter(p) {
+                                    return p.value > 0 ? p.value : "";
+                                },
+                            },
+                        },
+                    },
+                    data: this.state.neutral,
+                },
+                {
+                    name: "Overall",
                     type: "line",
                     stack: "total",
                     symbolSize: 10,
@@ -246,7 +267,7 @@ export  default  class MixChart extends Component {
 
 
     initChart() {
-        const {unfriendly,friendly,overall, labels} = this.props
+        const {positive,labels,negative, neutral,overall} = this.props
         if (!this.el) return;
         this.setState({ chart: echarts.init(this.el, "macarons") }, () => {
             this.setOptions();

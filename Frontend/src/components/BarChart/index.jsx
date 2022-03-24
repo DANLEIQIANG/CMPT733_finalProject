@@ -18,6 +18,10 @@ class BarChart extends Component {
     };
     state = {
         chart: null,
+        country : this.props.country,
+        positive_coutry : this.props.positive_coutry,
+        negative_country : this.props.negative_country,
+        neutral_country : this.props.neutral_country
     };
 
     componentDidMount() {
@@ -72,7 +76,7 @@ class BarChart extends Component {
             xAxis: [
                 {
                     type: "category",
-                    data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+                    data: this.props.country,
                     axisTick: {
                         alignWithLabel: true,
                     },
@@ -88,27 +92,27 @@ class BarChart extends Component {
             ],
             series: [
                 {
-                    name: "pageA",
+                    name: "negative",
                     type: "bar",
                     stack: "vistors",
                     barWidth: "60%",
-                    data: [79, 52, 200, 334, 390, 330, 220],
+                    data:this.props.negative_country,
                     animationDuration,
                 },
                 {
-                    name: "pageB",
+                    name: "positive",
                     type: "bar",
                     stack: "vistors",
                     barWidth: "60%",
-                    data: [80, 52, 200, 334, 390, 330, 220],
+                    data: this.props.positive_coutry,
                     animationDuration,
                 },
                 {
-                    name: "pageC",
+                    name: "neutral",
                     type: "bar",
                     stack: "vistors",
                     barWidth: "60%",
-                    data: [30, 52, 200, 334, 390, 330, 220],
+                    data: this.props.neutral_country,
                     animationDuration,
                 },
             ],
@@ -124,6 +128,7 @@ class BarChart extends Component {
 
     render() {
         const { className, height, width, styles } = this.props;
+        debounce(this.setOptions.bind(this), 300)();
         return (
             <div
                 className={className}
