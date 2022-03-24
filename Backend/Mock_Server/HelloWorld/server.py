@@ -87,9 +87,36 @@ def compare(type):
             "type":"Neutral",
             "num":b
         },
+    ],
+    "info3":[
+        {
+            "type": "Positive",
+            "num": c
+        },
+        {
+            "type": "Negative",
+            "num": a
+        },
+        {
+            "type": "Neutral",
+            "num": b
+        },
     ]
   }
 
+@app.route('/api/covid_byday')
+def covid_byday():
+
+    a = random.randint(0, 9) * 100
+    b = random.randint(0, 9) * 100
+    c = random.randint(0, 9) * 100
+    return   {
+    "error_code": 0,
+    "date":["2020/01/01","2021/01/02","2021/01/03","2020/01/01","2021/01/02","2021/01/03"],
+    "positive":[a,200,100,200,150,100],
+    "negative":[200,b,100,200,150,100],
+    "neutral":[100,200,c,200,150,100]
+  }
 
 if __name__ == '__main__':
     app.run()
