@@ -11,101 +11,112 @@ app = Flask(__name__)
 
 
 #指标卡 & 饼图
-@app.route('/overview/key_metrics/<startTime>_<endTime>')
-def overview_key_metics(startTime,endTime):
+
+
+@app.route('/api/timeselector/<startTime>_<endTime>')
+def timeselector(startTime,endTime):
     a = random.randint(0,9)*1000
     b = random.randint(0,9)*1000
-    return {
-        "msg": "success",
-        "startTime": startTime,
-        "endTime": endTime,
-        "info":[
+    return  {
+        "error_code": 0,
+        "date": ["2020/09/01","2020/09/02","2020/09/03","2020/09/04","2020/09/05","2020/09/06","2020/09/07"],
+        "positive": [100, 520, 2000, 100, b, 3300, 2200],
+        "negative": [300, 100, 100, a, 100, 3300, 2020],
+        "neutral": [200, 520, a, 3340, 3900, 6600, 4200],
+        "overall": [1, 1, 1, 1, 1, 1, 1],
+        "total": [
             {
-                "type":"Friendly",
+                "type": "Positive",
                 "num": a
             },
             {
-                "type": "Unfriendly",
-                "num":  b
+                "type": "Negative",
+                "num": b
             },
             {
-                "type": "Total",
+                "type": "Neutral",
                 "num": random.randint(0, 9) * 1000
             }
         ]
     }
-#状图，点击指标卡可以切换，一共三张图
-@app.route('/overview/key_metrics_byday/<startTime>_<endTime>')
-def overview_key_metics_byday(startTime,endTime):
-    x = random.randint(1,9)*1000
-    return {
-        "msg": "success",
-        "startTime": startTime,
-        "endTime": endTime,
-        "date": ["2020/09/01","2020/09/02","2020/09/03","2020/09/04","2020/09/05","2020/09/06","2020/09/07"],
-        "friendly": [x, 520, 2000, x, 3900, 3300, 2200],
-        "unfriendly": [300, x, x, 3340, x, 3300, 2020],
-        "overall": [x+300, x+520, x+2000, x+3340, x+3900, 6600, 4200]
+
+
+@app.route('/api/country/<startTime>_<endTime>')
+def country(startTime,endTime):
+    a = random.randint(0,9)*100
+    b = random.randint(0,9)*100
+    return  {
+        "error_code": 0,
+        "country":["USA","Canada","China","Australia","Japan"],
+        "positive":[100,200,100,a,b],
+        "negative":[200,100,100,b,a],
+        "neutral":[100,200,100,a,a]
     }
+@app.route('/api/compare/<type>')
+def compare(type):
+    print(type)
+    a = random.randint(0, 9) * 1000
+    b = random.randint(0, 9) * 1000
+    c = random.randint(0, 9) * 1000
+    return  {
+    "error_code": 0,
+     "info1":[
+        {
+            "type":"Positive",
+            "num": a
+        },
+        {
+            "type":"Negative",
+            "num": b
+        },
+        {
+            "type":"Neutral",
+            "num": c
+        },
+    ],
+    "info2":[
+        {
+            "type":"Positive",
+            "num": c
+        },
+        {
+            "type":"Negative",
+            "num": a
+        },
+        {
+            "type":"Neutral",
+            "num":b
+        },
+    ],
+    "info3":[
+        {
+            "type": "Positive",
+            "num": c
+        },
+        {
+            "type": "Negative",
+            "num": a
+        },
+        {
+            "type": "Neutral",
+            "num": b
+        },
+    ]
+  }
 
-#要不要加时间? 预期展示各种歧视的分类和比例，排序
-@app.route('/overview/type/<startTime>_<endTime>')
-def overview_type(startTime,endTime):
-    print("overview_type")
-    return {
-        "msg": "success",
-        "startTime": startTime,
-        "endTime": endTime,
-        "items":[
-            {
-                "name": "good",
-                "percent": 98
-            },
-            {
-                "name": "bad",
-                "percent": 50
-            },
-            {
-                "name": "undefined",
-                "percent": 30
-            }
-        ]
-    }
+@app.route('/api/covid_byday')
+def covid_byday():
 
-
-@app.route('/analysis/sex/<startTime>_<endTime>')
-def analysis_sex(startTime,endTime):
-    return {
-        "msg": "success",
-        "startTime": startTime,
-        "endTime": endTime,
-        "date": ["2020/09/01","2020/09/02","2020/09/03","2020/09/04","2020/09/05","2020/09/06","2020/09/07"],
-        "total_male":10000,
-        "total_female": 12000,
-        "male": [79, 52, 200, 334, 390, 330, 220],
-        "female": [30, 52, 200, 334, 390, 330, 220],
-        "overall": [100, 102, 500, 634, 790, 660, 420]
-    }
-
-@app.route('/analysis/age/<startTime>_<endTime>')
-def analysis_age(startTime,endTime):
-    return {
-        "msg": "success",
-        "startTime": startTime,
-        "endTime": endTime,
-        "date": ["2020/09/01","2020/09/02","2020/09/03","2020/09/04","2020/09/05","2020/09/06","2020/09/07"],
-        "7_17":10000,
-        "18_40": 10000,
-        "41_65": 10000,
-        "_65": 10000,
-        "7_17_split": [79, 52, 200, 334, 390, 330, 220],
-        "18_40_split": [30, 52, 200, 334, 390, 330, 220],
-        "41_65_split": [79, 52, 200, 334, 390, 330, 220],
-        "_65_split": [30, 52, 200, 334, 390, 330, 220],
-        "overall": [100, 102, 500, 634, 790, 660, 420]
-    }
-
-
+    a = random.randint(0, 9) * 100
+    b = random.randint(0, 9) * 100
+    c = random.randint(0, 9) * 100
+    return   {
+    "error_code": 0,
+    "date":["2020/01/01","2021/01/02","2021/01/03","2020/01/01","2021/01/02","2021/01/03"],
+    "positive":[a,200,100,200,150,100],
+    "negative":[200,b,100,200,150,100],
+    "neutral":[100,200,c,200,150,100]
+  }
 
 if __name__ == '__main__':
     app.run()

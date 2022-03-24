@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col} from "antd";
 import CountUp from "react-countup";
-import axios from 'axios'
 import "./index.css";
 
 let chartList = [
