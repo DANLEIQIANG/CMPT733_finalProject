@@ -217,7 +217,7 @@ def get_covidby_data():
 
 @app.route('/api/covid_byday')
 def covid_byday():
-    li = get_contry_data()
+    li = get_covidby_data()
     date_lst = []
     neg_lst = []
     po_lst = []
