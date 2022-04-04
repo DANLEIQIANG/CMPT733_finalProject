@@ -51,12 +51,12 @@ def timeselector(startTime,endTime):
         "overall": over_list,
         "total": [
             {
-                "type": "Positive",
-                "num": po_value
-            },
-            {
                 "type": "Negative",
                 "num": neg_value
+            },
+            {
+                "type": "Positive",
+                "num": po_value
             },
             {
                 "type": "Neutral",
@@ -100,9 +100,9 @@ def country(startTime,endTime):
     po_lst = []
     nu_lst = []
     for dir in sum_lst:
-        neg_lst.append(int(dir['count_0']))
-        po_lst.append(int(dir['count_1']))
-        nu_lst.append(int(dir['count_2']))
+        neg_lst.append(int(dir['count_0'])/(int(dir['count_0'])+int(dir['count_1'])+int(dir['count_2'])))
+        po_lst.append(int(dir['count_1'])/(int(dir['count_0'])+int(dir['count_1'])+int(dir['count_2'])))
+        nu_lst.append(int(dir['count_2'])/(int(dir['count_0'])+int(dir['count_1'])+int(dir['count_2'])))
         for k, v in dir.items():
             if k == 'country' and v not in cou_lst:
                 cou_lst.append(v)
@@ -164,41 +164,44 @@ def compare(compare_type):
     return  {
     "error_code": 0,
      "info1":[
-        {
-            "type":"Positive",
-            "num": po_value_0
-        },
-        {
+         {
             "type":"Negative",
             "num": neg_value_0
         },
         {
-            "type":"Neutral",
-            "num": nu_value_0
+            "type":"Positive",
+            "num": po_value_0
         },
+         {
+             "type": "Neutral",
+             "num": nu_value_0
+         },
     ],
     "info2":[
+        {
+            "type": "Negative",
+            "num": neg_value_1
+        },
+
         {
             "type":"Positive",
             "num": po_value_1
         },
         {
-            "type":"Negative",
-            "num": neg_value_1
-        },
-        {
-            "type":"Neutral",
+            "type": "Neutral",
             "num": nu_value_1
         },
+
     ],
     "info3":[
         {
-            "type": "Positive",
-            "num": po_value_2
-        },
-        {
             "type": "Negative",
             "num": neg_value_2
+        },
+
+        {
+            "type": "Positive",
+            "num": po_value_2
         },
         {
             "type": "Neutral",

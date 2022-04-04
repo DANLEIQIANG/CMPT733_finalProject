@@ -13,7 +13,7 @@ app.config.from_object(config)
 db = SQLAlchemy(app)
 
 class Article(db.Model):
-    __tablename__ = 'article'
+    __tablename__ = 'article2'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     title = db.Column(db.String(100), nullable=False)
     content = db.Column(db.Text, nullable=False)
