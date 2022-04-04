@@ -207,5 +207,39 @@ def compare(compare_type):
     ]
   }
 
+def get_covidby_data():
+    conn = pymysql.connect(host='127.0.0.1', database='twitter', user='root', password='12345678')
+    cursor = conn.cursor(DictCursor)
+    cursor.execute("SELECT date, type, labels, period, sum(counts) FROM tbl_model_show GROUP BY type, labels, date, period HAVING type ='covid' and period = 1; ")
+    result = cursor.fetchall()
+    conn.close()
+    return result
+
+@app.route('/api/covid_byday')
+def covid_byday():
+    li = get_contry_data()
+    date_lst = []
+    neg_lst = []
+    po_lst = []
+    nu_lst = []
+    for dir in li:
+        if dir['labels'] == 0:
+            neg_lst.append(int(dir['sum(counts)']))
+        elif dir['labels'] == 1:
+            po_lst.append(int(dir['sum(counts)']))
+        else:
+            nu_lst.append(int(dir['sum(counts)']))
+        for k, v in dir.items():
+            if k == 'date' and str(v) not in date_lst:
+                v = str(v)
+                date_lst.append(v)
+    return   {
+    "error_code": 0,
+    "date": date_lst,
+    "positive": po_lst,
+    "negative": neg_lst,
+    "neutral": nu_lst
+  }
+
 if __name__ == '__main__':
     app.run()
