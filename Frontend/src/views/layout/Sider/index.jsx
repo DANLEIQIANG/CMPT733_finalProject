@@ -35,8 +35,8 @@ export default class SiderDemo extends React.Component {
                     <Menu.Item key="2" icon={<DesktopOutlined />}>
                         <Link to='/analysis'>Analysis</Link >
                     </Menu.Item>
-                    <Menu.Item key="9" icon={<FileOutlined />}>
-                        Files
+                    <Menu.Item key="3" icon={<FileOutlined />}>
+                        <Link to='/file'>File</Link >
                     </Menu.Item>
                 </Menu>
             </Sider>

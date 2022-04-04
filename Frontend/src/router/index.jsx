@@ -5,6 +5,7 @@ import Sider from "../views/layout/Sider";
 import Header from "../views/layout/Header";
 import Overview from "../pages/Overview"
 import Analysis from "../pages/Analysis"
+import File from "../pages/File";
 import * as PropTypes from "prop-types";
 const {Content} = Layout;
 
@@ -21,6 +22,7 @@ export default class MyRouter extends React.Component {
                             <Routes>
                                 <Route path="/overview" element={<Overview/>} />
                                 <Route path="/analysis" element={<Analysis/>} />
+                                <Route path="/file" element={<File/>} />
                                 <Route path="/" element={<Navigate to="/overview"/>} />
                             </Routes>
                         </div>

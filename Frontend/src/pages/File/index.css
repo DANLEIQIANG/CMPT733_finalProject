@@ -1,0 +1,11 @@
+.chart-wrapper {
+    position: relative;
+    background: #fff;
+    padding: 16px 16px 0;
+    margin-bottom: 32px;
+}
+img{
+    width:600px;
+    height:400px;
+    object-fit:cover;
+}
