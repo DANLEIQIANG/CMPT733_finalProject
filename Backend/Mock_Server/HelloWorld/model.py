@@ -210,7 +210,7 @@ def compare(compare_type):
 def get_covidby_data():
     conn = pymysql.connect(host='127.0.0.1', database='twitter', user='root', password='12345678')
     cursor = conn.cursor(DictCursor)
-    cursor.execute("SELECT date, type, labels, period, sum(counts) FROM tbl_model_show GROUP BY type, labels, date, period HAVING type ='covid' and period = 1; ")
+    cursor.execute("SELECT date, type, labels, period, sum(counts) FROM tbl_model_show GROUP BY type, labels, date, period HAVING type ='covid' and period = 1 Order BY date; ")
     result = cursor.fetchall()
     conn.close()
     return result
