@@ -18,6 +18,10 @@ export default class LineChart extends Component {
     };
     state = {
         chart: null,
+        country : this.props.country,
+        positive_coutry : this.props.positive_coutry,
+        negative_country : this.props.negative_country,
+        neutral_country : this.props.neutral_country
     };
 
     componentDidMount() {
@@ -27,6 +31,9 @@ export default class LineChart extends Component {
     componentWillReceiveProps(nextProps) {
         if (nextProps.sidebarCollapsed !== this.props.sidebarCollapsed) {
             this.resize();
+        }
+        if (nextProps.chartData !== this.props.chartData) {
+            debounce(this.initChart.bind(this), 300)();
         }
     }
 
@@ -49,11 +56,12 @@ export default class LineChart extends Component {
         this.setState({ chart: null });
     }
 
-    setOptions(expectedData,actualData) {
+    setOptions() {
+        const animationDuration = 3000;
         this.state.chart.setOption({
             backgroundColor: "#fff",
             xAxis: {
-                data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+                data: this.props.country,
                 boundaryGap: false,
                 axisTick: {
                     show: false,
@@ -79,11 +87,11 @@ export default class LineChart extends Component {
                 },
             },
             legend: {
-                data: ["expected", "actual"],
+                data: ["Negative","Positive","Neutral"],
             },
             series: [
                 {
-                    name: "expected",
+                    name: "Negative",
                     itemStyle: {
                         normal: {
                             color: "#FF005A",
@@ -91,31 +99,54 @@ export default class LineChart extends Component {
                                 color: "#FF005A",
                                 width: 2,
                             },
+                            areaStyle: {
+                                color: "#f8dee2",
+                            },
                         },
                     },
                     smooth: true,
                     type: "line",
-                    data: expectedData,
+                    data: this.props.negative_country,
                     animationDuration: 2800,
                     animationEasing: "cubicInOut",
                 },
                 {
-                    name: "actual",
+                    name: "Positive",
                     smooth: true,
                     type: "line",
                     itemStyle: {
                         normal: {
-                            color: "#3888fa",
+                            color: "#3dc779",
                             lineStyle: {
-                                color: "#3888fa",
+                                color: "#3dc779",
                                 width: 2,
                             },
                             areaStyle: {
-                                color: "#f3f8ff",
+                                color: "#f5f8f2",
                             },
                         },
                     },
-                    data: actualData,
+                    data: this.props.positive_coutry,
+                    animationDuration: 2800,
+                    animationEasing: "quadraticOut",
+                },
+                {
+                    name: "Neutral",
+                    smooth: true,
+                    type: "line",
+                    itemStyle: {
+                        normal: {
+                            color: "#c4b531",
+                            lineStyle: {
+                                color: "#c4b531",
+                                width: 2,
+                            },
+                            areaStyle: {
+                                color: "#fafaf9",
+                            },
+                        },
+                    },
+                    data: this.props.neutral_country,
                     animationDuration: 2800,
                     animationEasing: "quadraticOut",
                 },
@@ -124,16 +155,15 @@ export default class LineChart extends Component {
     }
 
     initChart() {
-        const expectedData = [100, 120, 161, 134, 105, 160, 165]
-        const actualData = [120, 82, 91, 154, 162, 140, 140]
         if (!this.el) return;
         this.setState({ chart: echarts.init(this.el,"macarons") }, () => {
-            this.setOptions(expectedData,actualData);
+            this.setOptions(this.props.chartData);
         });
     }
 
     render() {
         const { className, height, width,styles } = this.props;
+        debounce(this.setOptions.bind(this), 300)();
         return (
             <div
                 className={className}

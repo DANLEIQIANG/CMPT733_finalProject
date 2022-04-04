@@ -101,7 +101,7 @@ export  default  class MixChart extends Component {
                 textStyle: {
                     color: "#90979c",
                 },
-                data: ["Positive", "Negative", "Neutral","Overall"],
+                data: ["Positive", "Negative", "Neutral"],
             },
             calculable: true,
             xAxis: [
@@ -185,7 +185,7 @@ export  default  class MixChart extends Component {
                     barGap: "10%",
                     itemStyle: {
                         normal: {
-                            color: "rgba(255,144,128,1)",
+                            color: "rgb(142,218,145)",
                             label: {
                                 show: true,
                                 textStyle: {
@@ -207,7 +207,7 @@ export  default  class MixChart extends Component {
                     stack: "total",
                     itemStyle: {
                         normal: {
-                            color: "rgba(0,191,183,1)",
+                            color: "rgb(241,104,130)",
                             barBorderRadius: 0,
                             label: {
                                 show: true,
@@ -226,7 +226,7 @@ export  default  class MixChart extends Component {
                     stack: "total",
                     itemStyle: {
                         normal: {
-                            color: "rgb(45,148,211)",
+                            color: "rgb(229,211,123)",
                             barBorderRadius: 0,
                             label: {
                                 show: true,
@@ -239,27 +239,7 @@ export  default  class MixChart extends Component {
                     },
                     data: this.state.neutral,
                 },
-                {
-                    name: "Overall",
-                    type: "line",
-                    stack: "total",
-                    symbolSize: 10,
-                    symbol: "circle",
-                    itemStyle: {
-                        normal: {
-                            color: "rgb(196,181,49)",
-                            barBorderRadius: 0,
-                            label: {
-                                show: true,
-                                position: "top",
-                                formatter(p) {
-                                    return p.value > 0 ? p.value : "";
-                                },
-                            },
-                        },
-                    },
-                    data: this.state.overall,
-                },
+
             ],
         });
     }

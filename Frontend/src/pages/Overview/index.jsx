@@ -101,7 +101,6 @@ class Overview extends Component {
                     positive_coutry : response.data.positive,
                     negative_country : response.data.negative,
                     neutral_country : response.data.neutral
-
                 })
             },
             error => {console.log("Panel Group request error")}
@@ -144,7 +143,7 @@ class Overview extends Component {
 
                     <br />
                     <h1>Twitter Cyberbullying Analysis: </h1>
-                    <BarChart {...this.state}/>
+                    <LineChart {...this.state}/>
 
 
 

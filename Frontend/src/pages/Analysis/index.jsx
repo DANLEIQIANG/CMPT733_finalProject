@@ -67,7 +67,7 @@ class Analysis extends Component {
         )
     }
     pieChartData_election(){
-        axios.get('http://localhost:3000/api/compare/election').then(
+        axios.get('http://localhost:3000/api/compare/politic').then(
             response => {
                 this.setState({
                     typeClass_election1:response.data.info1.map(val => val.type),
@@ -126,20 +126,20 @@ class Analysis extends Component {
                         <Row gutter={32}>
                             <Col xs={24} sm={24} lg={8}>
                                 <div className="chart-wrapper">
-                                    <h1>A: </h1>
+                                    <h1>Normal: </h1>
                                     <PieChart typeClass={this.state.typeClass_war1} numClass={this.state.numClass_war1} infoClass={this.state.infoClass_war1}/>
 
                                 </div>
                             </Col>
                             <Col xs={24} sm={24} lg={8}>
                                 <div className="chart-wrapper">
-                                    <h1>B: </h1>
+                                    <h1>Holiday: </h1>
                                     <PieChart typeClass={this.state.typeClass_war2} numClass={this.state.numClass_war2} infoClass={this.state.infoClass_war2}/>
                                 </div>
                             </Col>
                             <Col xs={24} sm={24} lg={8}>
                                 <div className="chart-wrapper">
-                                    <h1>C: </h1>
+                                    <h1>War start: </h1>
                                     <PieChart typeClass={this.state.typeClass_war3} numClass={this.state.numClass_war3} infoClass={this.state.infoClass_war3}/>
                                 </div>
                             </Col>
@@ -167,19 +167,19 @@ class Analysis extends Component {
                             <Col  xs={24} sm={24} md={24} lg={12} xl={12}
                                   style={{paddingRight: "8px" }}>
                                 <div className="chart-wrapper">
-                                    <h1>Before: </h1>
+                                    <h1>2019.3.07-2019.3.14: </h1>
                                     <PieChart typeClass={this.state.typeClass_covid1} numClass={this.state.numClass_covid1} infoClass={this.state.infoClass_covid1}/>
                                 </div>
                             </Col>
                             <Col  xs={24} sm={24} md={24} lg={12} xl={10} style={{paddingRight: "8px"}}>
                                 <div className="chart-wrapper">
-                                    <h1>After: </h1>
+                                    <h1>2020.3.07-2020.3.14: </h1>
                                     <PieChart typeClass={this.state.typeClass_covid2} numClass={this.state.numClass_covid2} infoClass={this.state.infoClass_covid2}/>
                                 </div>
                             </Col>
 
                         </Row>
-                        <h1>Twitter Cyberbullying Analysis: </h1>
+                        <h1>Covid 2020.3.07 - 2020.3.15: </h1>
                         <BarChart country={this.state.date_covid} positive_coutry={this.state.positive_covid} negative_country={this.state.negative_covid} neutral_country={this.state.neutral_covid}/>
 
 

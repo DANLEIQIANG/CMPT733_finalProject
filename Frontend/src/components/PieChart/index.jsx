@@ -70,7 +70,7 @@ export default  class PieChart extends Component {
             calculable: true,
             series: [
                 {
-                    name: "WEEKLY WRITE ARTICLES",
+                    name: "Info:",
                     type: "pie",
                     roseType: "radius",
                     radius: [15, 95],
