@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {useState} from 'react';
 import { DatePicker, Space } from 'antd';
 import { Row, Col } from "antd";
 import moment from 'moment';
@@ -33,15 +34,17 @@ class Overview extends Component {
         neutral_country:[],
 
     }
-    onPickerChange(a,dateString){
-        this.setState({
-            startTime:dateString[0].replace(/[/]/g,""),
-            endTime:dateString[1].replace(/[/]/g,""),
-        })
-
-    }
+      onPickerChange(a,dateString){
+          setTimeout(()=>{
+                this.setState({
+                      startTime:dateString[0].replace(/[/]/g,""),
+                      endTime:dateString[1].replace(/[/]/g,""),
+                });
+                this.mixChartData();this.pieChartData();this.panelGroupData();this.boxCardData();this.barChartData()
+            },0)
+        }
     mixChartData(){
-        let {startTime, endTime} = this.state
+        const {startTime, endTime} = this.state
         axios.get('http://localhost:3000/api/timeselector/'+startTime+'_'+endTime).then(
             response => {
                 this.setState({
@@ -51,12 +54,13 @@ class Overview extends Component {
                     neutral:response.data.neutral,
                     overall:response.data.overall,
                 })
+                console.log(this.state)
             },
             error => {console.log("Mix Group request error")}
         )
     }
     pieChartData(){
-        let {startTime, endTime} = this.state
+        const {startTime, endTime} = this.state
         axios.get('http://localhost:3000/api/timeselector/'+startTime+'_'+endTime).then(
             response => {
                 this.setState({
@@ -108,7 +112,6 @@ class Overview extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <div >
                 <div>
@@ -116,7 +119,7 @@ class Overview extends Component {
                     <RangePicker
                         defaultValue={[moment('2022-01-01', dateFormat), moment('2022-01-07', dateFormat)]}
                         format={dateFormat}
-                        onChange = {(a,b) =>{this.onPickerChange(a,b);this.mixChartData();this.pieChartData();this.panelGroupData();this.boxCardData();this.barChartData()}}
+                        onChange = {(a,b) =>{this.onPickerChange(a,b)}}
                         placeholder={['Start Time','End Time']}
                         allowClear = {false}
                     />
