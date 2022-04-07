@@ -85,7 +85,7 @@ def helperr(x):
         return x
 
 def main(dataset):
-    outpath = 'EDA/image/'
+    outpath = 'EDA/image/' + dataset.split('/')[-2] + '/'
     #load the dataset
     df = pd.read_csv(dataset)
     df['classification_labels'] = df['classification_labels'].apply(helperr)

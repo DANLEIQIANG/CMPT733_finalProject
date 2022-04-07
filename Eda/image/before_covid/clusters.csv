@@ -1,0 +1,244 @@
+,count,cluster,terms
+1,3210,1,"Index(['year', 'would', 'want', 'use', 'day', 'peopl', 'say', 'think', 'great',
+       'come', 'us', 'also', 'make', 'take', 'night', 'citi', 'get', 'last',
+       'like', 'thing'],
+      dtype='object')"
+17,339,4,"Index(['still', 'wait', 'gt', 'way', 'wind', 'humid', 'bad', 'that', 'weather',
+       'pressur', 'start', 'rain', 'heart', 'stop', 'eat', 'ive', 'light',
+       'your', 'talk', 'cloud'],
+      dtype='object')"
+25,218,23,"Index(['time', 'everi', 'last', 'long', 'first', 'go', 'good', 'like', 'one',
+       'year', 'make', 'take', 'watch', 'say', 'im', 'show', 'amp', 'ive',
+       'start', 'night'],
+      dtype='object')"
+35,186,24,"Index(['one', 'get', 'would', 'way', 'day', 'think', 'good', 'show', 'realli',
+       'like', 'year', 'make', 'love', 'go', 'amp', 'great', 'im', 'peopl',
+       'know', 'see'],
+      dtype='object')"
+32,181,3,"Index(['work', 'like', 'get', 'day', 'im', 'go', 'great', 'amp', 'year',
+       'make', 'peopl', 'today', 'time', 'one', 'hard', 'way', 'art', 'thank',
+       'women', 'take'],
+      dtype='object')"
+16,180,13,"Index(['get', 'make', 'dont', 'know', 'think', 'may', 'want', 'last', 'come',
+       'great', 'use', 'rid', 'wait', 'show', 'night', 'paid', 'way', 'also',
+       'spend', 'your'],
+      dtype='object')"
+43,173,58,"Index(['amp', '2', 'love', 'women', 'day', 'thank', 'come', 'go', 'give',
+       'show', 'like', 'year', 'us', 'would', 'know', 'hear', 'way', 'bar',
+       'alway', 'light'],
+      dtype='object')"
+28,173,15,"Index(['today', 'rain', 'mph', 'humid', '00', 'mm', 'temperatur', 'wind',
+       'rise', 'day', 'pressur', 'like', 'hpa', 'gust', 'baromet', 'new',
+       'ave', 'mb', 'women', 'celebr'],
+      dtype='object')"
+12,155,33,"Index(['go', 'like', 'let', 'im', 'get', 'amp', 'cant', 'see', 'want', 'still',
+       'need', 'would', 'dont', 'way', 'use', 'say', 'pass', 'got', 'take',
+       'abl'],
+      dtype='object')"
+2,153,14,"Index(['look', 'like', 'forward', 'great', 'make', 'see', 'one', 'get', 'time',
+       'someth', 'way', 'use', 'love', 'take', 'march', 'new', 'game', 'tire',
+       'last', 'wrong'],
+      dtype='object')"
+11,148,6,"Index(['see', 'best', 'ever', 'make', 'come', 'great', 'van', 'dont',
+       'captain', 'amp', 'day', 'world', 'lot', 'wait', 'cant', 'everi', 'get',
+       'someon', 'part', 'far'],
+      dtype='object')"
+4,145,38,"Index(['need', 'know', 'someon', 'see', 'made', 'great', 'like', 'come', 'us',
+       'year', 'im', 'peopl', 'school', 'day', 'way', 'better', 'girl',
+       'alreadi', 'get', 'go'],
+      dtype='object')"
+14,141,22,"Index(['like', 'would', 'peopl', 'feel', 'think', 'amp', 'differ', 'realli',
+       'need', 'know', 'els', 'never', 'guy', 'shit', 'dont', 'still', 'idea',
+       'likelike', 'hate', 'said'],
+      dtype='object')"
+3,133,37,"Index(['love', 'lovelove', 'realli', 'great', 'dont', 'art', 'think',
+       'doughnut', 'us', 'place', 'want', 'one', 'time', 'bet', 'see', 'color',
+       'day', 'your', 'year', 'would'],
+      dtype='object')"
+8,132,39,"Index(['im', 'like', 'dont', 'get', 'go', 'last', 'glad', 'think', 'thing',
+       'know', 'one', 'let', 'still', 'follow', 'ass', 'way', 'tire', 'super',
+       'yeah', 'take'],
+      dtype='object')"
+22,131,7,"Index(['got', 'ta', 'get', 'go', 'guy', 'shit', 'one', 'good', 'day', 'im',
+       'brexit', 'amp', 'alway', 'feel', 'take', 'still', 'never', 'today',
+       'time', 'caus'],
+      dtype='object')"
+50,126,18,"Index(['day', 'women', 'intern', 'today', 'love', 'celebr', 'woman', 'world',
+       'dayhappi', 'amp', 'inspir', 'good', 'happi', 'beauti', 'strong', 'one',
+       'power', 'thank', 'support', '1'],
+      dtype='object')"
+45,126,45,"Index(['good', 'luck', 'realli', 'im', 'pretti', 'night', 'tell', 'got', 'see',
+       'she', 'one', 'goodgood', 'thing', 'luckgood', 'enjoy', 'love',
+       'everyon', 'way', 'thought', 'day'],
+      dtype='object')"
+18,123,48,"Index(['even', 'know', 'dont', 'like', 'never', 'one', 'would', 'peopl',
+       'first', 'come', 'great', 'tri', 'think', 'go', 'time', 'way', 'hate',
+       'use', 'countri', 'thank'],
+      dtype='object')"
+37,123,34,"Index(['new', 'york', 'relat', 'certain', 'need', 'manhattan', 'yorknew',
+       'come', 'amp', 'make', 'start', 'got', 'say', 'friend', 'day', 'audit',
+       'credit', 'tax', 'keep', 'offer'],
+      dtype='object')"
+49,118,2,"Index(['make', 'feel', 'life', 'first', 'support', 'women', 'way', 'love',
+       'welcom', 'alway', 'thing', 'chang', 'free', 'famili', 'someon',
+       'great', 'would', 'hand', 'take', 'peopl'],
+      dtype='object')"
+20,116,25,"Index(['game', 'play', 'team', 'go', 'win', '3', 'first', 'everi', 'guy',
+       'confer', 'watch', 'big', 'score', 'like', 'time', 'one', 'got', 'year',
+       'back', 'school'],
+      dtype='object')"
+13,110,8,"Index(['back', 'go', 'come', 'stop', 'get', 'traffic', 'delay', '3', 'follow',
+       'would', 'amp', 'like', 'still', 'min', 'let', 'got', 'use', 'ave',
+       'lane', 'take'],
+      dtype='object')"
+5,106,50,"Index(['thank', 'thankthank', 'today', 'lord', 'great', 'god', 'help', 'list',
+       'good', 'mani', 'im', 'give', 'come', 'remind', 'show', 'sithank',
+       'appreci', 'apprecithank', 'oh', 'daythank'],
+      dtype='object')"
+40,106,46,"Index(['hope', 'get', 'year', 'great', 'go', 'one', 'day', 'see', 'good',
+       'like', 'would', 'back', 'better', 'today', 'come', 'got', 'love',
+       'birthday', 'last', 'look'],
+      dtype='object')"
+24,103,59,"Index(['live', 'go', 'get', 'like', 'love', 'would', 'year', 'life', 'one',
+       'god', 'news', 'march', 'run', 'may', 'famili', 'come', 'time', 'us',
+       'differ', 'peopl'],
+      dtype='object')"
+6,102,54,"Index(['week', 'next', 'last', 'day', 'one', 'us', 'see', 'make', 'go',
+       'women', 'two', 'team', 'new', 'school', 'today', 'get', 'anoth',
+       'come', 'great', 'good'],
+      dtype='object')"
+23,101,36,"Index(['well', 'done', 'fargo', 'go', 'west', 'deserv', 'get', 'said', 'de',
+       'moin', 'wellwell', 'good', 'come', 'stuff', 'iawell', 'mani', 'first',
+       'team', 'start', 'space'],
+      dtype='object')"
+41,100,31,"Index(['lol', 'lollol', 'tri', 'like', 'go', 'make', 'would', 'know', 'bad',
+       'one', 'think', 'love', 'aint', 'want', 'use', 'see', 'littl', 'might',
+       'peopl', 'ass'],
+      dtype='object')"
+53,90,49,"Index(['world', 'run', 'servic', 'product', 'make', 'need', 'us', 'peopl',
+       'book', 'amp', 'water', 'great', 'state', 'food', 'place', 'day',
+       'good', 'stori', 'confer', 'never'],
+      dtype='object')"
+9,88,32,"Index(['much', 'thank', 'love', 'go', 'get', 'us', 'sit', 'chang', 'ever',
+       'din', 'want', 'muchlove', 'group', 'put', 'thing', 'actual', 'show',
+       'watch', 'win', 'rather'],
+      dtype='object')"
+26,87,56,"Index(['could', 'commun', 'pictur', 'get', 'way', 'make', 'keep', 'peopl',
+       'like', 'year', 'know', 'still', 'think', 'ago', 'read', 'go', 'thing',
+       'us', 'good', 'show'],
+      dtype='object')"
+51,84,17,"Index(['tonight', 'read', 'book', 'day', 'see', 'worldbookday', 'dinner',
+       'goal', 'us', 'get', 'give', 'im', 'stori', 'come', 'back', 'start',
+       'ticket', 'night', 'favourit', 'librari'],
+      dtype='object')"
+29,84,35,"Index(['na', 'gon', 'wan', 'see', 'go', 'get', 'like', 'today', 'im', 'take',
+       'play', 'stop', 'realli', 'amp', 'n', 'never', 'fuck', 'us', 'know',
+       'say'],
+      dtype='object')"
+15,82,41,"Index(['call', 'would', '2', 'today', 'femal', 'name', 'peopl', 'made',
+       'right', 'one', 'hey', 'realli', 'amp', 'book', 'high', 'ok', 'live',
+       'want', 'need', 'that'],
+      dtype='object')"
+38,82,47,"Index(['man', 'like', 'play', 'dont', 'thank', 'young', 'get', 'good', 'let',
+       'look', 'want', 'guy', 'know', 'move', 'need', 'made', 'us', 'big',
+       'feel', 'r'],
+      dtype='object')"
+21,81,28,"Index(['fuck', 'im', 'get', 'fuckfuck', 'peopl', 'got', 'nigga', 'like',
+       'your', 'amp', 'bitch', 'shit', 'give', 'sick', 'love', 'say', 'realli',
+       'aint', 'walk', 'much'],
+      dtype='object')"
+0,74,30,"Index(['right', 'rightright', 'your', 'human', 'also', 'eu', 'guy', 'still',
+       'like', 'seem', 'peopl', 'bodi', 'place', 'meet', 'keep', 'task', 'ni',
+       'care', 'lot', 'back'],
+      dtype='object')"
+27,72,26,"Index(['morn', 'earli', 'wake', 'thank', 'meet', 'day', 'amp', 'coffe',
+       'night', 'late', 'laugh', 'stop', 'readi', 'run', 'good', 'work',
+       'actual', 'get', 'last', 'still'],
+      dtype='object')"
+44,70,9,"Index(['tri', 'ticket', 'second', 'lord', 'thee', 'may', 'think', 'make',
+       'keep', 'packag', 'pray', 'buy', 'move', 'see', 'get', 'night', 'give',
+       'first', '2019', 'find'],
+      dtype='object')"
+34,70,29,"Index(['pleas', 'get', 'help', 'follow', 'support', 'amp', 'check', 'like',
+       'friend', 'share', 'would', 'pleaspleas', 'tell', 'back', 'work', 'st',
+       'one', 'realli', 'wing', 'keep'],
+      dtype='object')"
+31,68,11,"Index(['miss', 'mani', 'last', 'dont', 'use', 'tri', 'would', 'come', 'night',
+       'much', 'w', 'crack', 'back', 'realli', 'go', 'know', 'like', 'one',
+       'love', 'women'],
+      dtype='object')"
+36,65,12,"Index(['birthday', 'happi', 'day', 'miss', 'hope', 'friday', 'us', 'get',
+       'women', 'great', 'stay', 'weekend', 'ladi', 'dayhappi', 'enjoy',
+       'wish', 'could', 'regular', 'see', 'boy'],
+      dtype='object')"
+7,65,40,"Index(['real', 'life', 'see', 'make', 'know', 'go', 'get', 'thing', 'hope',
+       'live', 'good', 'come', 'like', 'got', 'call', 'ass', 'run', 'give',
+       'talk', 'may'],
+      dtype='object')"
+55,62,19,"Index(['report', 'snow', 'inch', 'co', 'pm', 'earthquak', 'via', 'utc',
+       'train', 'ca', 'spotter', 'malibu', 'bank', 'privat', 'weather',
+       'would', 'mst', '5', 'cst', 'rain'],
+      dtype='object')"
+33,62,27,"Index(['music', 'tweet', 'like', 'great', 'make', 'tell', 'artist', 'amp',
+       'say', 'want', 'dj', 'one', 'everi', 'delet', 'contract', 'that', 'get',
+       'peopl', 'mistak', 'liter'],
+      dtype='object')"
+47,60,21,"Index(['trump', 'support', 'would', 'lie', 'believ', 'never', 'god', 'presid',
+       'much', 'tell', 'appl', 'one', 'truth', 'name', 'obama', 'tim',
+       'donald', 'polici', 'trumptrump', 'know'],
+      dtype='object')"
+56,57,10,"Index(['oh', 'like', 'im', 'got', 'one', 'go', 'god', 'fuck', 'hell', 'thing',
+       'omg', 'love', 'think', 'soon', 'sexist', 'amp', 'happi', 'look',
+       'food', 'shit'],
+      dtype='object')"
+46,57,57,"Index(['exit', 'eb', 'queen', 'clear', 'nb', 'incid', 'rte', 'ave', 'delay',
+       'back', 'i90', 'wb', 'dr', 'direct', 'weather', 'sky', '49', 'sb',
+       'humid', 'wind'],
+      dtype='object')"
+52,56,42,"Index(['fan', 'like', 'team', 'win', 'go', 'good', 'car', 'chang', 'footbal',
+       'im', 'guy', 'made', 'alway', 'w', 'time', 'amp', 'year', 'game',
+       'know', '1'],
+      dtype='object')"
+42,55,20,"Index(['dog', 'walk', 'omg', 'dogomg', 'feed', 'get', 'back', 'shit', 'done',
+       'day', 'dude', 'one', 'like', 'watch', 'im', 'cute', 'amp', 'babi',
+       'come', 'kitchen'],
+      dtype='object')"
+10,55,43,"Index(['ye', 'said', 'would', 'need', 'go', 'make', 'exactli', 'thank', 'want',
+       'year', '5', 'tri', 'rig', 'ya', 'probabl', 'might', 'get', 'keep',
+       'two', 'resid'],
+      dtype='object')"
+58,54,51,"Index(['beauti', 'day', 'love', 'thank', 'beautihappi', 'night', 'play',
+       'beautibeauti', 'morn', 'woman', 'got', 'alway', 'cake', 'teacher', 'w',
+       'see', 'friend', 'cypress', 'tuesday', 'today'],
+      dtype='object')"
+57,53,44,"Index(['yall', 'dont', 'yallyall', 'know', 'got', 'peopl', 'wonder', 'day',
+       'best', 'ass', 'friday', 'ladi', 'draw', 'put', 'shit', 'back', 'love',
+       'give', 'win', 'phone'],
+      dtype='object')"
+39,42,16,"Index(['photo', 'post', 'video', 'photopost', 'spring', 'floridapost',
+       'postpost', 'one', 'time', 'californiapost', 'look', 'artist',
+       'arkansatiti', 'captainmarvel', 'return', 'could', 'busi', 'super',
+       'takenhi', 'ever'],
+      dtype='object')"
+19,42,55,"Index(['agre', 'like', 'go', 'one', 'dont', 'need', 'agreagre', 'see', 'said',
+       'peopl', 'panel', 'agrecould', 'someth', 'great', 'look', 'never',
+       'good', 'would', 'whole', 'opinion'],
+      dtype='object')"
+30,40,53,"Index(['tomorrow', 'see', 'night', 'go', 'amp', 'im', 'like', 'saturday',
+       'day', 'tonight', 'still', 'cancel', 'good', 'save', 'today', 'sleep',
+       'cant', 'rebook', 'dalla', 'ticket'],
+      dtype='object')"
+54,40,5,"Index(['ill', 'hit', 'go', 'make', 'time', 'person', 'parti', 'get', 'last',
+       'car', 'minut', 'got', '2', 'back', 'one', 'know', 'whole', 'home',
+       'take', 'look'],
+      dtype='object')"
+59,36,0,"Index(['london', 'unit', 'manchest', 'kingdom', 'print', 'apprentic',
+       'greater', 'glasgow', 'talk', 'around', 'citi', 'e', '4', 'bu', 'thank',
+       'uk', '2', 'moka', 'c', 'm2'],
+      dtype='object')"
+48,23,52,"Index(['trend', 'unit', 'clip', 'statetrend', 'philadelphiaus',
+       'sheffieldlaram', 'lasvegatrend', 'statecharger', 'sandiegooohlala',
+       'philadelphiajustmyluck', 'philadelphiadeardunph', 'sb123',
+       'liverpoolafterlif', 'sydneyusfirst', 'product', 'die', '2', 'tri',
+       '72', 'hour'],
+      dtype='object')"

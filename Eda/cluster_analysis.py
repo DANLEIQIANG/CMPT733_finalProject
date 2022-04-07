@@ -15,7 +15,7 @@ import warnings
 def main(dataset):
     warnings.filterwarnings("ignore")
     df = pd.read_csv(dataset)
-    outpath = 'EDA/image/'
+    outpath = 'EDA/image/' + dataset.split('/')[-2] + '/'
     metric = pd.DataFrame()
     count = []
     cluster = []

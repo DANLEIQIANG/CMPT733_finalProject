@@ -17,7 +17,7 @@ def main(dataset):
         nltk.download('punkt')
     except:
         pass
-    outpath = 'EDA/image/'
+    outpath = 'EDA/image/' + dataset.split('/')[-2] + '/'
     
     #load the dataset
     df = pd.read_csv(dataset)
