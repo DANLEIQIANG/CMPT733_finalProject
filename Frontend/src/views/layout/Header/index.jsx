@@ -10,7 +10,7 @@ class MyHeader extends Component {
             <Header className="site-layout-background" style={{ padding: 0 }}>
                 <PageHeader
                     className="site-page-header"
-                    title="Twitter Cyberbullying Analysis"
+                    title="Twitter Sentiment Analysis in Significant Events"
                 />
             </Header>
 

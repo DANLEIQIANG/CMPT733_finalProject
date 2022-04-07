@@ -122,7 +122,7 @@ class Analysis extends Component {
                     </Button>
 
                     <div className="chart-wrapper">
-                        <h2>War: </h2>
+                        <h2>Russian-Ukrainian War: </h2>
                         <Row gutter={32}>
                             <Col xs={24} sm={24} lg={8}>
                                 <div className="chart-wrapper">
@@ -139,7 +139,7 @@ class Analysis extends Component {
                             </Col>
                             <Col xs={24} sm={24} lg={8}>
                                 <div className="chart-wrapper">
-                                    <h1>War start: </h1>
+                                    <h1>War start(2022.02.24-2022.03.02): </h1>
                                     <PieChart typeClass={this.state.typeClass_war3} numClass={this.state.numClass_war3} infoClass={this.state.infoClass_war3}/>
                                 </div>
                             </Col>
@@ -149,13 +149,13 @@ class Analysis extends Component {
                             <Col  xs={24} sm={24} md={24} lg={12} xl={12}
                                   style={{paddingRight: "8px" }}>
                                 <div className="chart-wrapper">
-                                    <h1>Before: </h1>
+                                    <h1>2016 US Election: </h1>
                                     <PieChart typeClass={this.state.typeClass_election1} numClass={this.state.numClass_election1} infoClass={this.state.infoClass_election1}/>
                                 </div>
                             </Col>
                             <Col  xs={24} sm={24} md={24} lg={12} xl={10} style={{paddingRight: "8px"}}>
                                 <div className="chart-wrapper">
-                                    <h1>After: </h1>
+                                    <h1>2020 US Election: </h1>
                                     <PieChart typeClass={this.state.typeClass_election2} numClass={this.state.numClass_election2} infoClass={this.state.infoClass_election2}/>
                                 </div>
                             </Col>

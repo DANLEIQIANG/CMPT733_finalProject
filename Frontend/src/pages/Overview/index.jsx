@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {useState} from 'react';
 import { DatePicker, Space } from 'antd';
 import { Row, Col } from "antd";
 import moment from 'moment';
@@ -141,7 +140,7 @@ class Overview extends Component {
                     />
                 </div>
                 <div className="chart-wrapper">
-                    <h1>Twitter Cyberbullying Analysis: </h1>
+                    <h1>Data summary: </h1>
                     <Row gutter={8}>
                         <Col  xs={24} sm={24} md={24} lg={12} xl={12}
                               style={{paddingRight: "8px" }}>
@@ -156,12 +155,12 @@ class Overview extends Component {
                         </Col>
 
                     </Row>
-                    <h1>Twitter Cyberbullying Analysis: </h1>
+                    <h1>Twitter Sentiment Change By Day: </h1>
                     <MixChart {...this.state}/>
 
 
                     <br />
-                    <h1>Twitter Cyberbullying Analysis: </h1>
+                    <h1>Country-based Twitter Sentiment Ratio by Day: </h1>
                     <LineChart {...this.state}/>
 
 

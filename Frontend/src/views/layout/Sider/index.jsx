@@ -33,7 +33,7 @@ export default class SiderDemo extends React.Component {
                         <Link to='/overview'>Overview</Link >
                     </Menu.Item>
                     <Menu.Item key="2" icon={<DesktopOutlined />}>
-                        <Link to='/analysis'>Analysis</Link >
+                        <Link to='/analysis'>Analysis & Compare</Link >
                     </Menu.Item>
                     <Menu.Item key="3" icon={<FileOutlined />}>
                         <Link to='/file'>File</Link >

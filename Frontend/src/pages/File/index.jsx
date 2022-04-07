@@ -7,7 +7,7 @@ class File extends Component{
             return (
                 <div >
                     <div className="chart-wrapper">
-                        <h2>War: </h2>
+                        <h2>EDA: </h2>
                             <Row gutter={32}>
                                 <Col xs={24} sm={24} lg={12}>
                                     <div className="chart-wrapper">
