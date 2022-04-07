@@ -218,16 +218,26 @@ def get_covidby_data():
     conn.close()
     return result
 
+def get_sum_data():
+    conn = pymysql.connect(host='127.0.0.1', database='twitter', user='root', password='12345678')
+    cursor = conn.cursor(DictCursor)
+    cursor.execute("SELECT date, type, period, sum(counts) FROM tbl_model_show GROUP BY type, date, period HAVING type ='covid' and period = 1 Order BY date; ")
+    result = cursor.fetchall()
+    conn.close()
+    return result
+
 @app.route('/api/covid_byday')
 def covid_byday():
     li = get_covidby_data()
+    sum_li = get_sum_data()
     count_dic = {}
     date_lst = []
     neg_lst = []
     po_lst = []
     nu_lst = []
-    total_count = 0
-    for dir in li:
+
+    for dir in sum_li:
+        total_count = 0
         for k, v in dir.items():
             if k == 'date' and str(v) not in date_lst:
                 v = str(v)
@@ -235,12 +245,14 @@ def covid_byday():
             if k == 'sum(counts)':
                 total_count += int(dir['sum(counts)'])
                 count_dic[str(dir['date'])] = total_count
-        
+
+
     for dir in li:
         for key, value in count_dic.items():
             if str(dir['date']) == key:
                 if dir['labels'] == 0:
                     neg_percent = int(dir['sum(counts)']) / value
+                    print(value)
                     neg_lst.append(neg_percent)
                 elif dir['labels'] == 1:
                     po_percent = int(dir['sum(counts)']) / value 
