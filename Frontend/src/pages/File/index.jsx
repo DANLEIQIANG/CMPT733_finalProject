@@ -9,21 +9,43 @@ class File extends Component{
                     <div className="chart-wrapper">
                         <h2>EDA: </h2>
                             <Row gutter={32}>
-                                <Col xs={24} sm={24} lg={12}>
+                                <Col xs={24} sm={24} lg={8}>
                                     <div className="chart-wrapper">
-                                        <h1>Normal: </h1>
-                                            <img src={require("./tensorboard.png")} alt=""/>
+                                        <h1>Tweet Length: </h1>
+                                            <img src={require("./box_plot_tweet_length.png.png")} alt=""/>
                                     </div>
                                 </Col>
-                                <Col xs={24} sm={24} lg={12}>
+                                <Col xs={24} sm={24} lg={8}>
                                     <div className="chart-wrapper">
-                                        <h1>Holiday: </h1>
-                                            <img src={require("./tensorboard.png")} alt=""/>
-
+                                        <h1>Total tweets By Country: </h1>
+                                            <img src={require("./country_distribution.png")} alt=""/>
                                     </div>
                                 </Col>
+                                  <Col xs={24} sm={24} lg={8}>
+                                        <div className="chart-wrapper">
+                                            <h1>Account history By Country: </h1>
+                                                <img src={require("./history_by_country.png")} alt=""/>
+                                        </div>
+                                    </Col>
+                            </Row>
+                              <Row gutter={32}>
+                                <Col xs={24} sm={24} lg={8}>
+                                    <div className="chart-wrapper">
+                                        <h1>Tokenization Top20 words Frequency: </h1>
+                                            <img src={require("./token_distribution.png")} alt=""/>
+                                    </div>
+                                </Col>
+                               <Col xs={24} sm={24} lg={8}>
+                                   <div className="chart-wrapper">
+                                       <h1>User Created By Year: </h1>
+                                           <img src={require("./user_created.png")} alt=""/>
+                                   </div>
+                               </Col>
 
                             </Row>
+
+
+
 
 
 
