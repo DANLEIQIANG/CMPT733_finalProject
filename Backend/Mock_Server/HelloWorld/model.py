@@ -221,21 +221,34 @@ def get_covidby_data():
 @app.route('/api/covid_byday')
 def covid_byday():
     li = get_covidby_data()
+    count_dic = {}
     date_lst = []
     neg_lst = []
     po_lst = []
     nu_lst = []
+    total_count = 0
     for dir in li:
-        if dir['labels'] == 0:
-            neg_lst.append(int(dir['sum(counts)']))
-        elif dir['labels'] == 1:
-            po_lst.append(int(dir['sum(counts)']))
-        else:
-            nu_lst.append(int(dir['sum(counts)']))
         for k, v in dir.items():
             if k == 'date' and str(v) not in date_lst:
                 v = str(v)
                 date_lst.append(v)
+            if k == 'sum(counts)':
+                total_count += int(dir['sum(counts)'])
+                count_dic[str(dir['date'])] = total_count
+        
+    for dir in li:
+        for key, value in count_dic.items():
+            if str(dir['date']) == key:
+                if dir['labels'] == 0:
+                    neg_percent = int(dir['sum(counts)']) / value
+                    neg_lst.append(neg_percent)
+                elif dir['labels'] == 1:
+                    po_percent = int(dir['sum(counts)']) / value 
+                    po_lst.append(po_percent)
+                else:
+                    nu_percent = int(dir['sum(counts)']) / value 
+                    nu_lst.append(nu_percent)
+    
     return   {
     "error_code": 0,
     "date": date_lst,
