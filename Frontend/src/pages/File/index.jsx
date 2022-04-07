@@ -45,6 +45,53 @@ class File extends Component{
                             </Row>
 
 
+                     <h2>Tiange TODO: </h2>
+                           <Row gutter={32}>
+                               <Col xs={24} sm={24} lg={12}>
+                                   <div className="chart-wrapper">
+                                       <h1>Tweet Length: </h1>
+                                           <img className="img2" src={require("./cluster_distribution.png")} alt=""/>
+                                   </div>
+                               </Col>
+                               <Col xs={24} sm={24} lg={12}>
+                                   <div className="chart-wrapper">
+                                       <h1>Total tweets By Country: </h1>
+                                           <img className="img2" src={require("./mean_label_score_world.jpg")} alt=""/>
+                                   </div>
+                               </Col>
+                           </Row>
+                             <Row gutter={32}>
+                               <Col xs={24} sm={24} lg={12}>
+                                   <div className="chart-wrapper">
+                                       <h1>Tokenization Top20 words Frequency: </h1>
+                                           <img className="img2" src={require("./negative_percent_usa.png")} alt=""/>
+                                   </div>
+                               </Col>
+                              <Col xs={24} sm={24} lg={12}>
+                                  <div className="chart-wrapper">
+                                      <h1>User Created By Year: </h1>
+                                          <img className="img2" src={require("./positive_percent_usa.png")} alt=""/>
+                                  </div>
+                              </Col>
+                           </Row>
+
+                            <Row gutter={32}>
+                              <Col xs={24} sm={24} lg={12}>
+                                  <div className="chart-wrapper">
+                                      <h1>Tokenization Top20 words Frequency: </h1>
+                                          <img className="img2" src={require("./negative_percent_world.jpg")} alt=""/>
+                                  </div>
+                              </Col>
+                             <Col xs={24} sm={24} lg={12}>
+                                 <div className="chart-wrapper">
+                                     <h1>User Created By Year: </h1>
+                                         <img className="img2" src={require("./positive_percent_world.jpg")} alt=""/>
+                                 </div>
+                             </Col>
+                          </Row>
+
+
+
 
 
 
