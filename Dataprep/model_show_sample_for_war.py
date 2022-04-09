@@ -34,20 +34,20 @@ def main():
         'user.fields': 'created_at,description,id,location,name,username',
         'max_results': 500
     }
-    # begin = date(2021, 9, 24)
-    # end = date(2021, 9, 30)
-    # for i in range((end - begin).days + 1):
-    #     day = begin + timedelta(days=i)
-    #     filename = '../Dataset/model_show_sample_for_war/normal_week/' + str(day) + '.csv'
-    #     s = str(day) + 'T00:00:00Z'
-    #     for j in range(24):
-    #         e = (datetime.strptime(s, frmt) + timedelta(hours=3)).strftime(frmt)
-    #         start_time, end_time = randomtimes(s, e, duration)
-    #         params['start_time'] = start_time
-    #         params['end_time'] = end_time
-    #         s = e
-    #         query_to_csv(search_url, params, filename)
-    #         time.sleep(5)
+    begin = date(2021, 9, 24)
+    end = date(2021, 9, 30)
+    for i in range((end - begin).days + 1):
+        day = begin + timedelta(days=i)
+        filename = '../Dataset/model_show_sample_for_war/normal_week/' + str(day) + '.csv'
+        s = str(day) + 'T00:00:00Z'
+        for j in range(8):
+            e = (datetime.strptime(s, frmt) + timedelta(hours=3)).strftime(frmt)
+            start_time, end_time = randomtimes(s, e, duration)
+            params['start_time'] = start_time
+            params['end_time'] = end_time
+            s = e
+            query_to_csv(search_url, params, filename)
+            time.sleep(5)
 
     begin = date(2021, 12, 24)
     end = date(2021, 12, 30)
@@ -55,7 +55,7 @@ def main():
         day = begin + timedelta(days=i)
         filename = '../Dataset/model_show_sample_for_war/holiday_week/' + str(day) + '.csv'
         s = str(day) + 'T00:00:00Z'
-        for j in range(24):
+        for j in range(8):
             e = (datetime.strptime(s, frmt) + timedelta(hours=3)).strftime(frmt)
             start_time, end_time = randomtimes(s, e, duration)
             params['start_time'] = start_time
@@ -70,7 +70,7 @@ def main():
         day = begin + timedelta(days=i)
         filename = '../Dataset/model_show_sample_for_war/war_week/' + str(day) + '.csv'
         s = str(day) + 'T00:00:00Z'
-        for j in range(24):
+        for j in range(8):
             e = (datetime.strptime(s, frmt) + timedelta(hours=3)).strftime(frmt)
             start_time, end_time = randomtimes(s, e, duration)
             params['start_time'] = start_time
