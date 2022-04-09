@@ -1,0 +1,241 @@
+,count,cluster,terms
+41,129,7,"Index(['trump', 'biden', 'joe', 'elect', 'mani', 'presid', 'us', 'fraud',
+       'lose', 'congratul', 'go', 'get', 'peopl', 'amp', 'like', 'know',
+       'vote', 'think', 'need', 'u'],
+      dtype='object')"
+44,128,34,"Index(['trump', 'republican', 'like', 'biden', 'said', 'elect', 'im',
+       'januari', 'get', 'think', 'give', 'sinc', 'got', 'enough', 'peopl',
+       'fuck', 'us', 'take', 'hous', 'win'],
+      dtype='object')"
+51,107,50,"Index(['trump', 'biden', 'vote', 'elect', 'need', 'call', 'amp', 'presid',
+       'vaccin', 'say', 'said', 'get', 'state', 'want', 'russian', 'fraud',
+       'never', 'go', 'harri', 'kamala'],
+      dtype='object')"
+2,106,35,"Index(['trump', 'biden', 'go', 'joe', 'elect', 'presid', 'us', 'right', 'get',
+       'peopl', 'law', 'loser', 'make', 'want', 'jill', 'dr', 'thing', 'hous',
+       'one', 'like'],
+      dtype='object')"
+49,100,39,"Index(['trump', 'presid', 'biden', 'donald', 'joe', 'say', 'thing', 'dollar',
+       'first', 'parti', 'need', 'american', 'year', 'peopl', 'go', 'make',
+       'could', 'still', 'said', 'democrat'],
+      dtype='object')"
+56,99,14,"Index(['trump', 'elect', 'biden', 'vote', 'get', 'donald', 'peopl', 'like',
+       'time', 'glass', 'need', 'water', 'presid', 'good', 'pleas', 'us',
+       'still', 'one', 'law', 'state'],
+      dtype='object')"
+48,98,43,"Index(['trump', 'biden', 'elector', 'elect', 'presid', 'fire', 'colleg',
+       'donald', 'vote', 'your', 'republican', 'peopl', 'think', 'go', 'news',
+       'one', 'also', 'said', 'hous', 'mean'],
+      dtype='object')"
+39,97,3,"Index(['trump', 'elect', 'amp', 'biden', 'time', 'mani', 'vote', 'russian',
+       'peopl', 'need', 'get', 'think', 'american', 'count', 'countri',
+       'cyber', 'presid', 'us', 'continu', 'republican'],
+      dtype='object')"
+3,97,17,"Index(['trump', 'biden', 'would', 'elect', 'said', 'secur', 'well', 'peopl',
+       'think', 'dr', 'get', 'want', 'tri', 'first', 'fire', 'jill', 'presid',
+       'tweet', 'even', 'white'],
+      dtype='object')"
+4,89,18,"Index(['trump', 'amp', 'biden', 'elect', 'get', 'presid', 'steal', 'day',
+       'know', 'vote', 'like', 'realli', 'peopl', 'one', 'tri', 'anyth',
+       'throat', 'happen', 'joe', 'believ'],
+      dtype='object')"
+35,88,16,"Index(['trump', 'biden', 'elect', 'peopl', 'day', 'like', 'give', 'get',
+       'help', 'know', 'american', 'let', 'dont', 'want', 'amp', 'watch', 'us',
+       'sound', 'die', 'corrupt'],
+      dtype='object')"
+52,88,11,"Index(['trump', 'biden', 'elect', 'presid', 'never', 'call', 'american',
+       'would', 'peopl', 'year', 'amp', 'democrat', 'said', 'get', 'million',
+       'overturn', 'lie', 'joe', 'look', 'he'],
+      dtype='object')"
+46,88,9,"Index(['trump', 'elect', 'biden', 'lie', 'vote', 'peopl', 'presid', 'amp',
+       'said', 'go', 'joe', 'kamala', 'get', 'cast', 'harri', 'power',
+       'elector', 'state', 'know', 'case'],
+      dtype='object')"
+43,87,1,"Index(['trump', 'elect', 'presid', 'biden', 'state', 'support', 'god', 'vote',
+       'dont', 'one', 'get', 'special', 'look', 'donald', 'counsel', 'say',
+       'meet', 'need', 'secur', 'tax'],
+      dtype='object')"
+53,84,52,"Index(['trump', 'free', 'candid', 'first', 'olf', 'biden', 'conduct',
+       'potenti', 'fair', 'oromia', 'prison', 'elect', 'joe', 'presid',
+       'court', 'mcconnel', 'amp', 'still', 'even', 'pro'],
+      dtype='object')"
+7,83,13,"Index(['trump', 'biden', 'elect', 'presid', 'peopl', 'fuck', 'made', 'ever',
+       'privileg', 'melania', 'make', 'get', 'say', 'take', 'american',
+       'white', 'hous', 'amp', 'need', 'even'],
+      dtype='object')"
+1,82,2,"Index(['amp', 'trump', 'biden', 'elect', 'presid', 'white', 'like', 'hous',
+       'get', 'see', 'would', 'vote', 'work', 'need', 'not', 'peopl', 'dr',
+       'american', 'republican', 'first'],
+      dtype='object')"
+36,82,31,"Index(['trump', 'biden', 'go', 'presid', 'time', 'elect', 'america', 'like',
+       'doesnt', 'first', 'say', 'may', 'man', 'home', 'way', 'citi', 'ever',
+       'one', 'stop', 'republican'],
+      dtype='object')"
+8,81,40,"Index(['trump', 'biden', 'presid', 'amp', 'know', 'never', 'way', 'countri',
+       'peopl', 'joe', 'republican', 'would', 'elect', 'back', 'one',
+       'america', 'tell', 'must', 'use', 'entir'],
+      dtype='object')"
+31,81,38,"Index(['trump', 'vote', 'biden', 'peopl', 'elect', 'presid', 'want', 'martial',
+       'american', 'year', 'get', 'noth', 'tri', 'lost', 'right', 'think',
+       'law', 'use', 'court', 'amp'],
+      dtype='object')"
+21,80,20,"Index(['trump', 'biden', 'think', 'win', 'russia', 'elect', 'presid', 'god',
+       'get', 'read', 'amp', 'us', 'go', 'na', 'vote', 'move', 'know', 'come',
+       'deserv', 'gon'],
+      dtype='object')"
+18,80,10,"Index(['trump', 'biden', 'elect', 'donald', 'lost', 'joe', 'presid', 'done',
+       'us', 'amp', 'get', 'time', 'remov', 'say', 'think', 'year', 'still',
+       'support', 'ag', 'u'],
+      dtype='object')"
+16,78,47,"Index(['trump', 'biden', 'still', 'like', 'januari', 'real', 'presid', 'pay',
+       'got', 'elect', 'doesnt', '20th', 'offici', 'get', 'corrupt', 'realli',
+       'herd', 'white', 'pardon', 'urg'],
+      dtype='object')"
+6,76,58,"Index(['trump', 'elect', 'amp', 'go', 'peopl', 'stop', 'time', 'biden',
+       'would', 'live', 'leav', 'presid', 'sens', 'support', 'get', 'lost',
+       'like', 'dont', 'parti', 'say'],
+      dtype='object')"
+26,74,46,"Index(['trump', 'elect', 'us', 'back', 'biden', 'win', 'get', 'hold',
+       'support', 'alreadi', '4', 'turn', 'go', 'like', 'would', 'give', 'say',
+       'think', 'count', 'also'],
+      dtype='object')"
+45,72,53,"Index(['trump', 'elector', 'biden', 'colleg', 'presid', 'right', 'joe',
+       'elect', 'vote', 'live', 'american', 'one', 'twitter', 'victori',
+       'money', 'win', 'word', 'donald', 'said', 'go'],
+      dtype='object')"
+12,71,54,"Index(['trump', 'elect', 'look', 'peopl', 'still', 'presid', 'believ', 'biden',
+       'fraud', 'think', 'us', 'care', 'get', 'know', 'new', 'countri', 'year',
+       'one', 'like', 'tax'],
+      dtype='object')"
+17,70,6,"Index(['trump', 'presid', 'elect', 'vote', 'state', 'american', 'biden',
+       'peopl', 'would', 'there', '4', 'get', 'im', 'sinc', 'elector', 'stand',
+       'amp', 'worst', 'believ', 'win'],
+      dtype='object')"
+23,70,32,"Index(['trump', 'one', 'think', 'elect', 'say', 'like', 'take', 'get', 'biden',
+       'truth', 'go', 'peopl', 'would', 'vote', 'your', 'support', 'dont',
+       'doesnt', 'democrat', 'call'],
+      dtype='object')"
+27,69,26,"Index(['trump', 'elect', 'biden', 'america', 'call', 'amp', 'man', 'fraud',
+       'vote', 'campaign', 'peopl', 'joe', 'like', 'russia', 'make',
+       'overturn', 'harri', 'result', 'fair', 'tri'],
+      dtype='object')"
+28,69,12,"Index(['trump', 'elect', 'get', 'would', 'gone', 'day', 'biden', 'next',
+       'support', 'let', 'say', 'polit', 'man', 'one', 'bad', 'week', 'peopl',
+       'critic', 'go', 'particular'],
+      dtype='object')"
+11,68,5,"Index(['trump', 'biden', 'offici', 'get', 'vaccin', 'man', 'go', 'hack',
+       'know', 'elect', 'amp', 'presid', 'news', 'putin', 'govern', 'say',
+       'count', 'lost', 'like', 'put'],
+      dtype='object')"
+22,68,49,"Index(['elect', 'trump', 'biden', 'like', 'immun', 'want', 'one', 'year',
+       'american', 'herd', 'vote', 'feel', 'part', 'see', 'fraud', 'specif',
+       'kill', 'mail', 'said', 'law'],
+      dtype='object')"
+37,66,45,"Index(['trump', 'elect', 'biden', 'know', 'state', 'need', 'still', 'go',
+       'gop', 'vote', 'counti', 'offici', 'would', 'next', 'show', 'peopl',
+       'presid', 'think', 'machin', 'govern'],
+      dtype='object')"
+47,66,36,"Index(['trump', 'elect', 'presid', 'republican', 'biden', 'parti', 'he',
+       'done', 'dem', 'im', 'like', 'need', 'us', 'fail', 'one', 'amp', 'evid',
+       'call', 'without', 'differ'],
+      dtype='object')"
+0,64,21,"Index(['trump', 'vote', 'biden', 'million', 'back', 'presid', 'even', 'like',
+       'elect', 'get', 'money', 'talk', 'real', 'peopl', 'take', 'legal',
+       'nation', 'countri', 'got', '81'],
+      dtype='object')"
+40,62,44,"Index(['trump', 'biden', 'elect', 'need', 'amp', 'get', 'would', 'vote',
+       '2016', 'even', 'black', 'hard', 'presid', 'democrat', 'vaccin',
+       'million', '4', 'hunter', 'realli', 'wish'],
+      dtype='object')"
+54,61,51,"Index(['trump', 'biden', 'day', 'covid', 'get', 'putin', 'gop', 'elect',
+       'would', 'go', 'amp', 'presid', 'crime', 'need', 'peopl', 'end', 'come',
+       'think', 'keep', 'vote'],
+      dtype='object')"
+19,61,57,"Index(['trump', 'he', 'work', 'biden', 'read', 'american', 'elect', 'stop',
+       'resign', 'russia', 'one', 'short', 'come', 'expect', 'smartnew', 'tri',
+       'get', 'call', 'putin', 'web'],
+      dtype='object')"
+9,61,41,"Index(['trump', 'elect', 'putin', 'biden', 'fraud', 'state', 'cabinet', 'get',
+       'someth', 'law', 'lie', 'king', 'republican', 'said', 'still', 'tweet',
+       'got', 'year', 'presid', 'fals'],
+      dtype='object')"
+42,59,48,"Index(['trump', 'biden', 'support', 'elect', 'vote', 'get', 'would', 'gop',
+       'say', 'bad', 'lost', 'wow', 'coronaviru', 'democrat', 'amp', 'ever',
+       'presid', 'ballot', 'russian', 'joe'],
+      dtype='object')"
+24,58,19,"Index(['trump', 'elect', 'head', 'biden', 'could', 'famili', 'sinc', 'georgia',
+       'get', 'work', 'vote', 'state', 'republican', 'need', 'fraud', 'crime',
+       'penc', 'year', 'secret', 'us'],
+      dtype='object')"
+59,56,15,"Index(['trump', 'vote', 'million', 'elect', 'biden', 'ballot', 'like', 'one',
+       'ass', 'make', 'cabinet', 'pardon', '4', 'fraud', 'rest', 'year',
+       'republican', 'dont', 'peopl', 'america'],
+      dtype='object')"
+15,56,30,"Index(['trump', 'elect', 'state', 'court', 'voter', 'biden', 'hear', 'fraud',
+       'america', 'person', 'evid', 'suprem', 'hate', 'vote', 'amp', 'want',
+       'peopl', '2020', 'eye', 'american'],
+      dtype='object')"
+5,54,33,"Index(['trump', 'biden', 'vaccin', 'like', 'amp', 'would', 'need', 'team',
+       'tax', 'peopl', 'presid', 'elect', 'claim', 'us', 'deal', 'jan',
+       'russian', 'lost', 'get', 'famili'],
+      dtype='object')"
+50,52,42,"Index(['trump', 'biden', 'lost', 'believ', 'follow', 'pick', 'he', 'care',
+       'fool', 'come', 'lie', 'make', 'elect', 'idiot', 'creat', 'go', 'barr',
+       'look', 'job', 'want'],
+      dtype='object')"
+58,51,29,"Index(['trump', 'elect', 'biden', 'traitor', 'care', 'peopl', 'presid',
+       'happen', 'plan', 'guy', 'year', 'court', 'must', 'na', 'state',
+       'countri', 'amp', 'cant', 'say', 'go'],
+      dtype='object')"
+30,51,22,"Index(['trump', 'tell', 'report', 'evid', 'make', 'elect', 'realli', 'fraud',
+       'biden', 'leav', 'charg', 'know', 'peopl', 'presid', 'amp', 'he',
+       'american', 'could', 'court', 'like'],
+      dtype='object')"
+34,50,24,"Index(['trump', 'barr', 'biden', 'crimin', 'believ', 'peopl', 'american',
+       'lose', 'protect', 'know', 'say', 'ag', 'put', 'like', 'atlant',
+       'everyth', 'good', 'amp', 'elect', 'look'],
+      dtype='object')"
+14,50,23,"Index(['trump', 'elect', 'biden', 'back', 'get', 'gop', 'tax', 'pay',
+       'support', 'presid', 'amp', 'believ', 'work', 'news', 'rig', 'peopl',
+       'four', 'past', 'countri', 'lost'],
+      dtype='object')"
+33,49,37,"Index(['trump', 'elect', 'loser', 'like', 'russia', 'amp', 'look', 'money',
+       'make', 'wait', 'biden', 'busi', 'would', 'back', 'day', 'ladi', 'noth',
+       'fascist', 'say', 'usa'],
+      dtype='object')"
+32,48,4,"Index(['trump', 'biden', 'elect', 'like', 'go', 'steal', 'fight', 'call',
+       'stand', 'week', 'presid', '2020', 'peopl', 'think', 'much', 'parti',
+       'republican', 'good', 'vote', 'ever'],
+      dtype='object')"
+20,47,8,"Index(['trump', 'elect', 'biden', 'presid', 'one', 'like', 'want', 'vote',
+       'run', 'way', 'find', 'traitor', 'amp', 'hear', 'back', 'peopl',
+       'anyth', 'noth', 'us', 'work'],
+      dtype='object')"
+57,47,56,"Index(['trump', 'give', 'year', 'biden', 'like', 'ballot', 'dont', 'jan',
+       'elect', 'read', 'take', 'peopl', 'still', 'mail', 'im', 'us', 'one',
+       'need', 'think', 'long'],
+      dtype='object')"
+38,46,27,"Index(['trump', 'biden', 'go', 'elect', 'hunter', 'would', 'joe', 'hand',
+       'pardon', 'hold', 'like', 'tell', 'take', 'say', 'presid', 'offic', 'b',
+       'not', 'better', 'text'],
+      dtype='object')"
+25,45,55,"Index(['trump', 'biden', 'elect', 'covid', 'know', 'hunter', 'month', 'world',
+       'amp', 'vaccin', 'investig', 'result', 'state', 'peopl', 'lost',
+       'murder', 'presid', 'may', 'must', 'joe'],
+      dtype='object')"
+29,45,25,"Index(['trump', 'elect', 'back', 'putin', 'power', 'presid', 'u', 'biden',
+       'peopl', 'stay', 'would', 'mean', 'state', 'covid', 'get', 'secur',
+       'held', 'allianc', '1st', 'want'],
+      dtype='object')"
+55,43,28,"Index(['trump', 'elect', 'china', 'presid', 'get', 'biden', 'senat', 'media',
+       'fraudul', 'way', 'us', 'big', 'kushner', 'not', 'can', 'kick', 'hous',
+       'million', 'gop', 'play'],
+      dtype='object')"
+10,39,0,"Index(['trump', 'vote', 'million', 'elect', 'biden', 'elector', 'colleg',
+       'fraud', 'dont', 'us', 'presid', 'like', 'joe', 'tweet', 'think',
+       'evid', 'peopl', 'time', 'ask', 'hey'],
+      dtype='object')"
+13,38,59,"Index(['trump', 'tell', 'presid', 'donald', 'want', 'state', 'j', 'unit',
+       'tri', 'evil', 'elect', 'biden', 'get', 'christma', 'god', 'peopl',
+       'america', 'like', 'vote', 'make'],
+      dtype='object')"

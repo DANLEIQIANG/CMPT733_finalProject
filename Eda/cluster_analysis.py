@@ -1,21 +1,29 @@
 import pandas as pd
-from nltk.corpus import stopwords
-from datetime import datetime
 import matplotlib.pyplot as plt
 import sys
-import seaborn as sns
-import nltk
-import re
-from nltk.tokenize import word_tokenize
-import plotly.express as px
-import geopandas as gpd
 import numpy as np
 import warnings
+import glob
+import os
+
+def contactCsv(path):
+    read_csv = glob.glob(os.path.join(path, '*.csv'))
+    df = None
+    for file in read_csv:
+        temp = pd.read_csv(file)
+        if df is None:
+            df = temp
+        else:
+            df = pd.concat([df, temp], ignore_index=True)
+    print(df.info())
+    return df
 
 def main(dataset):
     warnings.filterwarnings("ignore")
-    df = pd.read_csv(dataset)
-    outpath = 'EDA/image/' + dataset.split('/')[-2] + '/'
+    #load the dataset
+    outpath = 'EDA/image_updated/' + dataset.split('/')[-2] + '/'
+    print(outpath)
+    df = contactCsv(dataset)
     metric = pd.DataFrame()
     count = []
     cluster = []
@@ -32,7 +40,7 @@ def main(dataset):
     metric['terms'] = terms
     output = metric.sort_values('count',ascending=False)
     output.to_csv(outpath +'clusters.csv')
-    plt.bar(metric['cluster'], metric['count'], color ='maroon')
+    plt.bar(metric['cluster'], metric['count'], color ='cornflowerblue')
     plt.xlabel("Cluster Label")
     plt.ylabel("Number of tweets per cluster")
     plt.savefig(outpath+'cluster_distribution.png')
