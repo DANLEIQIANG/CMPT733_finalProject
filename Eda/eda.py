@@ -8,7 +8,20 @@ import nltk
 import re
 from nltk.tokenize import word_tokenize
 import plotly.express as px
-import geopandas as gpd
+import glob
+import os
+
+def contactCsv(path):
+    read_csv = glob.glob(os.path.join(path, '*.csv'))
+    df = None
+    for file in read_csv:
+        temp = pd.read_csv(file)
+        if df is None:
+            df = temp
+        else:
+            df = pd.concat([df, temp], ignore_index=True)
+    print(df.info())
+    return df
 
 def main(dataset):
     #setup environment if necessary
@@ -17,10 +30,9 @@ def main(dataset):
         nltk.download('punkt')
     except:
         pass
-    outpath = 'EDA/image/' + dataset.split('/')[-2] + '/'
-    
-    #load the dataset
-    df = pd.read_csv(dataset)
+    outpath = 'EDA/image_updated/' + dataset.split('/')[-2] + '/'
+    print(outpath)
+    df = contactCsv(dataset)
     
     #plot countries
     df = df[df.geo_country_code.isin(['NZ','AU','CA','GB','US'])]
