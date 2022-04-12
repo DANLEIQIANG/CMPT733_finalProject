@@ -7,97 +7,34 @@ class File extends Component{
             return (
                 <div >
                     <div className="chart-wrapper">
-                        <h2>EDA: </h2>
+                        <h2>Cyberbullying model result: </h2>
                             <Row gutter={32}>
-                                <Col xs={24} sm={24} lg={8}>
+                                <Col xs={24} sm={24} lg={24}>
                                     <div className="chart-wrapper">
-                                        <h1>Tweet Length: </h1>
-                                            <img src={require("./box_plot_tweet_length.png.png")} alt=""/>
+                                            <img src={require("./WeChate818a345acb3415dbe1c3d269c73a9ca.png")} alt=""/>
                                     </div>
                                 </Col>
-                                <Col xs={24} sm={24} lg={8}>
-                                    <div className="chart-wrapper">
-                                        <h1>Total tweets By Country: </h1>
-                                            <img src={require("./country_distribution.png")} alt=""/>
-                                    </div>
-                                </Col>
-                                  <Col xs={24} sm={24} lg={8}>
-                                        <div className="chart-wrapper">
-                                            <h1>Account history By Country: </h1>
-                                                <img src={require("./history_by_country.png")} alt=""/>
-                                        </div>
-                                    </Col>
                             </Row>
-                              <Row gutter={32}>
-                                <Col xs={24} sm={24} lg={8}>
-                                    <div className="chart-wrapper">
-                                        <h1>Tokenization Top20 words Frequency: </h1>
-                                            <img src={require("./token_distribution.png")} alt=""/>
-                                    </div>
-                                </Col>
-                               <Col xs={24} sm={24} lg={8}>
-                                   <div className="chart-wrapper">
-                                       <h1>User Created By Year: </h1>
-                                           <img src={require("./user_created.png")} alt=""/>
-                                   </div>
-                               </Col>
-
-                            </Row>
-
-
-                     <h2>Tiange TODO: </h2>
-                           <Row gutter={32}>
-                               <Col xs={24} sm={24} lg={12}>
-                                   <div className="chart-wrapper">
-                                       <h1>Tweet Length: </h1>
-                                           <img className="img2" src={require("./cluster_distribution.png")} alt=""/>
-                                   </div>
-                               </Col>
-                               <Col xs={24} sm={24} lg={12}>
-                                   <div className="chart-wrapper">
-                                       <h1>Total tweets By Country: </h1>
-                                           <img className="img2" src={require("./mean_label_score_world.jpg")} alt=""/>
-                                   </div>
-                               </Col>
-                           </Row>
-                             <Row gutter={32}>
-                               <Col xs={24} sm={24} lg={12}>
-                                   <div className="chart-wrapper">
-                                       <h1>Tokenization Top20 words Frequency: </h1>
-                                           <img className="img2" src={require("./negative_percent_usa.png")} alt=""/>
-                                   </div>
-                               </Col>
-                              <Col xs={24} sm={24} lg={12}>
-                                  <div className="chart-wrapper">
-                                      <h1>User Created By Year: </h1>
-                                          <img className="img2" src={require("./positive_percent_usa.png")} alt=""/>
-                                  </div>
-                              </Col>
-                           </Row>
-
-                            <Row gutter={32}>
-                              <Col xs={24} sm={24} lg={12}>
-                                  <div className="chart-wrapper">
-                                      <h1>Tokenization Top20 words Frequency: </h1>
-                                          <img className="img2" src={require("./negative_percent_world.jpg")} alt=""/>
-                                  </div>
-                              </Col>
-                             <Col xs={24} sm={24} lg={12}>
-                                 <div className="chart-wrapper">
-                                     <h1>User Created By Year: </h1>
-                                         <img className="img2" src={require("./positive_percent_world.jpg")} alt=""/>
-                                 </div>
-                             </Col>
-                          </Row>
-
-
-
 
 
 
 
 
                     </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+ <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/> <br/>
+                                             <br/>
+                                             <br/>
+                                             <br/>
 
 
                 </div>

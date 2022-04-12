@@ -155,13 +155,14 @@ class Overview extends Component {
                         </Col>
 
                     </Row>
+
+                    <h1>Country-based Twitter Sentiment Ratio by Day: </h1>
+                    <LineChart {...this.state}/>
+                    <br />
                     <h1>Twitter Sentiment Change By Day: </h1>
                     <MixChart {...this.state}/>
 
 
-                    <br />
-                    <h1>Country-based Twitter Sentiment Ratio by Day: </h1>
-                    <LineChart {...this.state}/>
 
 
 

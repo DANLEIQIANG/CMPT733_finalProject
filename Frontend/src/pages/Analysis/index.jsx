@@ -9,7 +9,7 @@ import axios from "axios";
 import PanelGroup from "../../components/PanelGroup";
 import PieChart from "../../components/PieChart";
 import MixChart from "../../components/MixChart";
-import BarChart from "../../components/BarChart";
+import LineChart from "../../components/LineChart";
 
 const { RangePicker } = DatePicker;
 const dateFormat = 'YYYY/MM/DD';
@@ -180,7 +180,7 @@ class Analysis extends Component {
 
                         </Row>
                         <h1>Covid 2020.3.07 - 2020.3.15: </h1>
-                        <BarChart country={this.state.date_covid} positive_coutry={this.state.positive_covid} negative_country={this.state.negative_covid} neutral_country={this.state.neutral_covid}/>
+                        <LineChart country={this.state.date_covid} positive_coutry={this.state.positive_covid} negative_country={this.state.negative_covid} neutral_country={this.state.neutral_covid}/>
 
 
 

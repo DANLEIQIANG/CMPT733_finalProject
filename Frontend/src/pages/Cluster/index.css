@@ -5,11 +5,7 @@
     margin-bottom: 32px;
 }
 img{
-    width:1050px;
-    height:600px;
+    width:550px;
+    height:400px;
     object-fit:cover;
-}
-.img2{
-    width:600px;
-    height:500px;
 }
