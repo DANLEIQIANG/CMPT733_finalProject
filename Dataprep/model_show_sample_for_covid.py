@@ -39,7 +39,7 @@ def main():
         day = begin + timedelta(days=i)
         filename = '../Dataset/model_show_sample_for_covid/before_covid/' + str(day) + '.csv'
         s = str(day) + 'T00:00:00Z'
-        for j in range(24):
+        for j in range(8):
             e = (datetime.strptime(s, frmt) + timedelta(hours=3)).strftime(frmt)
             start_time, end_time = randomtimes(s, e, duration)
             params['start_time'] = start_time
@@ -54,7 +54,7 @@ def main():
         day = begin + timedelta(days=i)
         filename = '../Dataset/model_show_sample_for_covid/after_covid/' + str(day) + '.csv'
         s = str(day) + 'T00:00:00Z'
-        for j in range(24):
+        for j in range(8):
             e = (datetime.strptime(s, frmt) + timedelta(hours=3)).strftime(frmt)
             start_time, end_time = randomtimes(s, e, duration)
             params['start_time'] = start_time

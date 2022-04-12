@@ -1,0 +1,241 @@
+,count,cluster,terms
+47,117,43,"Index(['trump', 'elect', 'donald', 'tweet', 'amp', 'like', 'give', 'work', '2',
+       'presid', 'us', 'got', 'back', 'make', 'get', '4', 'vote', 'mr', 'sinc',
+       'nuke'],
+      dtype='object')"
+7,100,21,"Index(['trump', 'amp', 'think', 'take', 'must', 'elect', 'trumptrump',
+       'cabinet', 'start', 'would', 'nuclear', 'name', 'call', 'night', 'kid',
+       'china', 'want', 'said', 'campaign', 'back'],
+      dtype='object')"
+20,99,2,"Index(['trump', 'presid', 'obama', 'would', 'elect', 'said', 'want', 'support',
+       'via', 'watch', 'happen', 'go', 'us', 'call', 'undo', 'think', 'putin',
+       'feel', 'campaign', 'power'],
+      dtype='object')"
+24,86,4,"Index(['trump', 'like', 'inaugur', 'vote', 'news', 'perform', 'peopl',
+       'support', 'keep', 'amp', 'donald', 'play', 'famili', 'next', 'presid',
+       'get', 'day', 'say', 'elect', 'make'],
+      dtype='object')"
+15,81,22,"Index(['trump', 'presid', 'amp', 'obama', 'christma', 'elect', 'next',
+       'israel', 'show', 'pretend', 'right', 'peopl', 'us', 'hillari', 'u',
+       'shit', 'trumptrump', 'blame', 'b', 'must'],
+      dtype='object')"
+2,81,36,"Index(['trump', 'elect', 'presid', 'state', 'obama', 'vote', 'nuclear',
+       'peopl', 'would', 'us', 'pick', 'right', 'life', 'want', 'transit',
+       'donald', 'friend', 'also', 'given', '1'],
+      dtype='object')"
+29,79,1,"Index(['trump', 'say', 'think', 'look', 'peopl', 'thing', 'get', 'shit',
+       'elect', 'go', 'support', 'want', 'like', 'would', 'vote', 'obama',
+       'year', 'fuck', 'come', 'chang'],
+      dtype='object')"
+41,75,7,"Index(['trump', 'great', 'support', 'evacu', 'donald', 'tower', 'would',
+       'suspici', 'presid', 'packag', 'said', 'go', 'conflict', 'elect',
+       'interest', 'say', 'tax', 'could', 'fuck', 'vote'],
+      dtype='object')"
+57,74,5,"Index(['trump', 'vote', 'see', 'like', 'first', 'amp', 'elect', 'us', 'arm',
+       'anoth', 'illeg', 'america', 'state', 'make', 'race', 'great', 'hear',
+       'go', 'voter', 'perform'],
+      dtype='object')"
+51,74,27,"Index(['trump', 'support', 'ivanka', 'man', 'good', 'move', 'report', 'love',
+       'elect', 'thing', 'un', 'peopl', 'along', 'amp', 'want', 'make',
+       'harass', 'donald', 'say', 'go'],
+      dtype='object')"
+16,73,3,"Index(['trump', 'new', 'christma', 'presid', 'year', 'america', 'get',
+       'donald', 'peopl', 'elect', 'amp', 'king', 'women', 'happi', 'need',
+       'way', 'could', 'want', 'thing', 'day'],
+      dtype='object')"
+0,69,17,"Index(['trump', 'putin', 'elect', 'want', 'twitter', 'good', 'day', 'stop',
+       'tax', 'us', 'snl', 'donald', 'make', 'ask', 'democrat', 'follow',
+       'russia', 'republican', 'presid', 'know'],
+      dtype='object')"
+54,67,26,"Index(['trump', 'like', 'support', 'amp', 'elect', 'obama', 'get', 'swamp',
+       'america', 'need', 'thank', 'presid', 'donald', 'ever', 'still',
+       'follow', 'would', 'big', 'vote', 'use'],
+      dtype='object')"
+30,66,11,"Index(['trump', 'donald', 'play', 'elect', 'day', 'one', 'swamp', 'bc', 'vote',
+       'drain', 'give', 'inaugur', 'christma', 'chang', 'post', 'bit',
+       'presid', 'voter', 'media', 'find'],
+      dtype='object')"
+4,66,9,"Index(['trump', 'go', 'get', 'need', 'amp', 'know', 'elect', 'must', 'mr',
+       'real', 'u', 'obama', 'turn', 'donald', 'year', 'like', 'hillari',
+       'think', 'vote', 'open'],
+      dtype='object')"
+18,62,29,"Index(['trump', 'like', 'peopl', 'amp', 'elect', 'time', 'donald', '2', 'take',
+       'better', 'talk', 'one', 'apolog', 'thing', 'care', 'obama', 'pretend',
+       'women', 'see', 'offic'],
+      dtype='object')"
+33,61,30,"Index(['trump', 'elect', 'would', 'vote', 'make', 'famili', 'million', 'tweet',
+       'think', 'train', 'state', 'job', 'great', 'popular', 'amp', 'say',
+       'presid', 'still', 'get', '3'],
+      dtype='object')"
+35,61,20,"Index(['trump', 'like', 'tweet', 'said', 'arm', 'amp', 'donald', 'u', 'charit',
+       'morn', 'except', '4', 'nuclear', 'plan', 'look', 'never', 'want',
+       'everyon', 'day', '2'],
+      dtype='object')"
+25,61,10,"Index(['trump', 'america', 'great', 'democrat', 'make', 'ivanka', 'read',
+       'new', 'lie', 'vote', 'amp', 'go', 'elect', 'liber', 'say', 'due',
+       'fight', 'donald', 'fear', 'right'],
+      dtype='object')"
+11,60,39,"Index(['trump', 'elector', 'news', 'wait', 'donald', 'take', 'elect', 'colleg',
+       'vote', 'one', 'christma', 'reason', 'think', '2', 'hillari', 'fake',
+       'time', 'merri', 'long', 'lie'],
+      dtype='object')"
+58,57,34,"Index(['trump', 'presid', 'one', 'elect', 'even', 'would', 'never', 'get',
+       'amp', 'team', 'need', 'peopl', 'hope', 'go', 'hate', 'tell', 'know',
+       'care', 'honest', 'miss'],
+      dtype='object')"
+1,57,41,"Index(['trump', 'say', 'person', 'still', 'nuclear', 'peopl', 'putin',
+       'inaugur', 'put', 'amp', 'never', 'donat', 'obama', 'see', 'go', 'nuke',
+       'hate', 'support', 'vote', 'us'],
+      dtype='object')"
+19,56,18,"Index(['trump', 'one', 'elect', 'call', '4', 'much', 'take', 'obama',
+       'presidenti', 'jet', 'come', 'yet', 'go', 'anyon', 'e', 'vs', 'amp',
+       'get', 'never', 'even'],
+      dtype='object')"
+50,53,49,"Index(['trump', 'putin', 'donald', 'take', 'amp', 'tower', 'apprentic', 'get',
+       'one', 'resist', 'secur', 'day', 'back', 'tape', 'elect', 'say',
+       'presid', 'use', 'think', 'trumptrump'],
+      dtype='object')"
+9,53,44,"Index(['trump', 'elect', 'like', 'christma', 'colleg', 'year', 'elector',
+       'america', 'back', 'wish', '2016', 'thought', 'loser', 'need', 'peopl',
+       'via', 'win', 'never', 'work', 'take'],
+      dtype='object')"
+56,53,19,"Index(['trump', 'amp', 'elect', 'presid', 'nuclear', 'happen', 'russia', 'put',
+       'attack', 'america', 'usa', 'capabl', 'play', 'us', 'follow', 'race',
+       'good', 'get', 'shit', 'think'],
+      dtype='object')"
+55,53,6,"Index(['trump', 'putin', 'tweet', 'man', 'obama', 'foreign', 'tax', 'church',
+       'presid', 'get', 'christma', 'word', 'great', 'tower', 'import', 'move',
+       'amp', 'us', 'consid', 'danger'],
+      dtype='object')"
+32,53,35,"Index(['trump', 'hope', 'god', 'amp', 'christma', 'bad', 'compar', 'new',
+       'resist', 'walk', 'presid', 'amaz', 'bush', 'one', 'thing', 'everyon',
+       '2', 'would', 'know', 'divest'],
+      dtype='object')"
+48,53,14,"Index(['trump', 'vote', 'foundat', 'news', 'ny', 'popular', 'new', 'rememb',
+       'presid', 'tell', 'amp', 'win', 'dept', 'stori', 'investig', 'everyth',
+       'obama', 'figur', 'differ', 'never'],
+      dtype='object')"
+59,52,13,"Index(['trump', 'want', 'support', 'year', 'new', 'amp', 'presid', 'famili',
+       'donald', 'say', 'drain', 'america', 'problem', 'forward', 'w', 'swamp',
+       'elect', 'vote', 'like', 'give'],
+      dtype='object')"
+23,52,28,"Index(['trump', 'would', 'elect', 'news', 'sue', 'play', 'alway', 'destroy',
+       'amp', 'kill', 'parti', 'care', 'violat', 'donald', 'need', 'make',
+       'russia', 'get', 'like', 'republican'],
+      dtype='object')"
+27,51,25,"Index(['trump', 'go', 'racist', 'amp', 'elect', 'make', 'comment', 'much',
+       'support', 'life', 'polit', 'hate', 'white', 'still', 'level', 'end',
+       'us', 'local', 'real', 'bigot'],
+      dtype='object')"
+43,51,15,"Index(['trump', 'clinton', 'job', 'american', 'tweet', 'year', 'bill',
+       'famili', 'would', '2', 'amp', 'elect', 'white', 'lie', 'get', 'trade',
+       'christma', 'miller', 'thought', 'vote'],
+      dtype='object')"
+26,51,8,"Index(['trump', 'lie', 'us', 'support', 'get', 'donald', 'would', 'chang',
+       'melania', 'need', 'care', 'use', 'elect', 'amp', 'mani', 'christma',
+       'war', 'time', 'help', 'merri'],
+      dtype='object')"
+13,50,48,"Index(['trump', 'vote', 'elect', 'obama', 'need', 'presidenti', 'america',
+       'head', 'maga', 'illeg', 'alreadi', 'one', 'know', 'team', 'white',
+       'percent', 'gop', 'amp', 'noth', 'legitim'],
+      dtype='object')"
+14,49,50,"Index(['trump', 'vote', 'donald', 'republican', 'life', 'attack', 'presid',
+       'digniti', 'popular', 'elect', 'get', 'american', 'mental', 'real',
+       'peopl', 'lose', 'mind', 'win', 'rig', 'small'],
+      dtype='object')"
+34,49,45,"Index(['trump', 'amp', 'presid', 'elect', 'campaign', 'yet', 'make', 'vote',
+       'donald', 'got', 'get', 'head', 'voter', 'eric', 'ny', 'st', 'ration',
+       'beach', 'palm', 'use'],
+      dtype='object')"
+22,49,53,"Index(['trump', 'vote', 'noth', 'elector', 'lead', 'ivanka', 'remov', 'elect',
+       'say', 'holiday', 'popular', 'flight', 'jetblu', 'donald', 'interest',
+       'trumptrump', 'expect', 'last', 'way', 'amp'],
+      dtype='object')"
+10,49,16,"Index(['trump', 'elect', 'dem', 'vote', 'take', 'believ', 'need', 'come', 'us',
+       'dead', 'someon', 'big', 'make', 'care', 'tell', 'na', '4', 'lose',
+       'hillari', 'lie'],
+      dtype='object')"
+38,48,51,"Index(['trump', 'right', 'vote', 'elect', 'christma', 'new', 'talk', 'presid',
+       'still', 'point', 'anyth', 'hillari', 'peopl', 'white', 'hous', 'hope',
+       'voter', 'ivanka', 'may', 'yall'],
+      dtype='object')"
+5,48,33,"Index(['trump', 'realli', 'elect', 'foundat', 'plan', 'think', 'back', 'hous',
+       'jew', 'make', 'releas', 'time', 'product', 'tri', 'letter', 'amp',
+       'season', 'miller', 'vote', 'want'],
+      dtype='object')"
+21,47,46,"Index(['trump', 'amp', 'peopl', 'new', 'win', 'vote', 'american', 'tri', 'one',
+       'fuck', 'california', 'best', '3', 'million', 'learn', 'go', 'like',
+       'lost', 'becom', 'elect'],
+      dtype='object')"
+40,46,12,"Index(['trump', 'go', 'like', 'stop', 'need', 'get', 'said', 'inaugur', 'vote',
+       'make', 'think', 'putin', 'gop', 'perform', '2', 'kiss', 'let',
+       'everyth', 'white', 'bromanc'],
+      dtype='object')"
+44,46,24,"Index(['trump', 'russia', 'know', 'world', 'amp', 'right', 'war', 'come', 'go',
+       'thing', 'one', '2', 'anoth', 'push', 'countri', 'like', 'donald',
+       'iran', 'presid', 'fight'],
+      dtype='object')"
+28,45,47,"Index(['trump', 'support', 'american', 'amp', 'elect', 'also', 'campaign',
+       'could', 'women', 'torn', 'million', 'come', 'kac', 'damag', 'tore',
+       'worri', 'understand', 'public', 'nuclear', 'buy'],
+      dtype='object')"
+53,45,57,"Index(['trump', 'thing', 'tweet', 'amp', 'elect', 'obama', 'burn', 'vote',
+       'presid', 'live', 'half', 'new', 'go', '4', 'logan', 'peopl', 'day',
+       'violat', 'need', 'win'],
+      dtype='object')"
+49,44,55,"Index(['trump', 'amp', 'go', 'keep', 'elect', 'win', 'work', 'punch', 'pleas',
+       'real', 'countri', 'cabinet', 'liber', 'american', 'height', 'yet',
+       'attack', 'idiot', '2020', 'men'],
+      dtype='object')"
+37,42,0,"Index(['trump', 'elect', 'presid', 'amp', 'u', 'putin', 'compani', 'delet',
+       'war', 'win', 'white', 'like', 'drug', 'voter', 'oil', 'hide', 'w',
+       'impeach', 'snowflak', 'interest'],
+      dtype='object')"
+31,42,31,"Index(['trump', 'peopl', 'believ', 'protect', 'kind', 'got', 'voter', 'im',
+       'man', 'ask', 'elect', 'support', 'vote', 'obama', 'commun', 'say',
+       'expos', 'call', 'oppos', 'twitter'],
+      dtype='object')"
+39,42,58,"Index(['trump', 'get', 'realli', 'next', 'lie', 'want', 'presid', 'su', 'need',
+       'martha', 'elect', 'pick', 'us', 'racist', 'conspiraci', '4', 'stand',
+       'guid', 'piec', 'think'],
+      dtype='object')"
+12,41,37,"Index(['trump', 'christma', 'year', 'obama', 'ye', 'live', 'war', 'un',
+       'present', 'past', 'gift', 'violat', '8', 'liar', 'like', 'deal', 'get',
+       'old', 'last', 'gener'],
+      dtype='object')"
+17,40,52,"Index(['trump', 'well', 'inaugur', 'drain', 'cabinet', 'drop', 'make', 'use',
+       'citi', 'gingrich', 'presid', 'ethic', 'swamp', 'forc', 'appointe',
+       'giuliani', 'white', 'delta', 'comey', 'plan'],
+      dtype='object')"
+3,40,40,"Index(['trump', 'get', 'elect', 'say', 'state', 'thing', 'said', 'vote',
+       'donald', 'tape', 'need', 'even', 'countri', 'think', 'r', 'let',
+       'hous', 'guy', 'pleas', 'press'],
+      dtype='object')"
+6,39,23,"Index(['trump', 'day', 'nuclear', 'presid', 'would', 'elect', 'must', 'posit',
+       'bibl', 'stop', 'voter', 'make', 'coup', 'defend', 'top', 'call',
+       'like', 'two', 'read', 'newt'],
+      dtype='object')"
+8,39,32,"Index(['trump', 'leader', 'wrong', 'vote', 'million', 'popular', 'better',
+       'lost', 'would', 'presid', 'pay', 'donald', 'parti', 'need', 'trust',
+       'democrat', 'nuke', 'call', '3', 'america'],
+      dtype='object')"
+45,38,38,"Index(['trump', 'may', 'like', 'presid', 'thought', 'hillari', 'believ',
+       'donald', 'clinton', 'big', 'chia', 'unit', 'even', 'head', 'prick',
+       'ever', 'want', 'emerg', 'secur', 'amp'],
+      dtype='object')"
+42,38,56,"Index(['trump', 'vote', 'go', 'get', 'putin', 'war', 'anoth', 'start', 'came',
+       'need', 'hillari', 'fool', 'cold', 'support', 'us', 'front', 'crook',
+       'galt', 'elect', 'look'],
+      dtype='object')"
+36,38,42,"Index(['trump', 'hate', 'clinton', 'daughter', 'want', 'chanc', 'bill',
+       'inaugur', 'skip', '70', 'etc', 'person', 'would', '100', 'give',
+       'kick', 'call', 'berlin', 'thing', 'cuban'],
+      dtype='object')"
+52,24,59,"Index(['trump', 'foreign', 'son', 'bulli', 'sens', 'stay', 'nonprofit',
+       'behind', 'help', 'see', 'mr', 'come', 'access', 'know', 'give',
+       'capabl', 'could', 'nuclear', 'clinton', 'must'],
+      dtype='object')"
+46,22,54,"Index(['trump', 'issu', 'see', 'rememb', 'persist', 'would', 'fli', 'us',
+       'new', 'news', 'room', 'observ', 'neg', 'econom', 'suprem', 'court',
+       'media', 'foreign', 'russia', 'primari'],
+      dtype='object')"

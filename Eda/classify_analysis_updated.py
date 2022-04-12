@@ -1,16 +1,12 @@
 import pandas as pd
-from nltk.corpus import stopwords
-from datetime import datetime
 import matplotlib.pyplot as plt
 import sys
-import seaborn as sns
-import nltk
-import re
-from nltk.tokenize import word_tokenize
 import plotly.express as px
 import geopandas as gpd
 import numpy as np
+import glob
 
+import os
 
 def helper(x):
     states = ['AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA',
@@ -84,10 +80,23 @@ def helperr(x):
     else:
         return x
 
+def contactCsv(path):
+    read_csv = glob.glob(os.path.join(path, '*.csv'))
+    df = None
+    for file in read_csv:
+        temp = pd.read_csv(file)
+        if df is None:
+            df = temp
+        else:
+            df = pd.concat([df, temp], ignore_index=True)
+    print(df.info())
+    return df
+
 def main(dataset):
-    outpath = 'EDA/image/' + dataset.split('/')[-2] + '/'
+    outpath = 'EDA/image_updated/' + dataset.split('/')[-2] + '/'
     #load the dataset
-    df = pd.read_csv(dataset)
+    print(outpath)
+    df = contactCsv(dataset)
     df['classification_labels'] = df['classification_labels'].apply(helperr)
     if len(np.unique(df['geo_country_code'])) <2:
         print('Only one country originality was detected.')
@@ -95,11 +104,11 @@ def main(dataset):
         temp = df[df['state']!=''].groupby('state').mean()[['classification_labels']]
         temp['state'] = temp.index
         fig = px.choropleth(temp,
-                    locations='state', 
-                    locationmode="USA-states", 
+                    locations='state',
+                    locationmode="USA-states",
                     scope="usa",
                     color='classification_labels',
-                    color_continuous_scale="Viridis_r",       
+                    color_continuous_scale="Viridis_r",
                     )
         fig.write_image(outpath + 'mean_label_score_usa.png')
 
@@ -108,11 +117,11 @@ def main(dataset):
         temp['positive_percent'] = temp['sentiment_cluster']/temp['all']*100
         temp['state'] = temp.index
         fig = px.choropleth(temp,
-                    locations='state', 
-                    locationmode="USA-states", 
+                    locations='state',
+                    locationmode="USA-states",
                     scope="usa",
                     color='positive_percent',
-                    color_continuous_scale="Viridis_r",       
+                    color_continuous_scale="Viridis_r",
                     )
         fig.write_image(outpath + 'positive_percent_usa.png')
 
@@ -126,7 +135,7 @@ def main(dataset):
                     scope="usa",
                     color='negative_percent',
                     color_continuous_scale="Viridis_r",
-                    range_color=(0, 100),
+                    range_color=(10, 30),
                     )
         fig.write_image(outpath + 'negative_percent_usa.png')
 
@@ -150,7 +159,7 @@ def main(dataset):
         temp = world.merge(temp,on='country_code')
         tempp = temp[(temp['iso_a3']!='CAF')&(temp['iso_a3']!='AUT')]
         tempp.plot(figsize=(15, 10),column='negative_percent',legend=True,legend_kwds={'label': "negative_percent",
-                        'orientation': "horizontal"})
+                        'orientation': "horizontal"}, vmin=17, vmax=22, cmap='YlGnBu', edgecolor='white')
         plt.savefig(outpath + 'negative_percent_world.jpg')
 
         temp = df[(df.geo_country_code.isin(['NZ','AU','CA','GB','US']))&(df['classification_labels']==2)].groupby('geo_country_code').count()[['classification_labels']]
@@ -171,11 +180,11 @@ def main(dataset):
         temp = df[df['state']!=''].groupby('state').mean()[['classification_labels']]
         temp['state'] = temp.index
         fig = px.choropleth(temp,
-                    locations='state', 
-                    locationmode="USA-states", 
+                    locations='state',
+                    locationmode="USA-states",
                     scope="usa",
                     color='classification_labels',
-                    color_continuous_scale="Viridis_r",       
+                    color_continuous_scale="Viridis_r",
                     )
         fig.write_image(outpath + 'mean_label_score_usa.png')
 
@@ -184,11 +193,11 @@ def main(dataset):
         temp['positive_percent'] = temp['cluster_labels']/temp['all']*100
         temp['state'] = temp.index
         fig = px.choropleth(temp,
-                    locations='state', 
-                    locationmode="USA-states", 
+                    locations='state',
+                    locationmode="USA-states",
                     scope="usa",
                     color='positive_percent',
-                    color_continuous_scale="Viridis_r",       
+                    color_continuous_scale="Viridis_r",
                     )
         fig.write_image(outpath + 'positive_percent_usa.png')
 
@@ -201,8 +210,8 @@ def main(dataset):
                     locationmode="USA-states", 
                     scope="usa",
                     color='negative_percent',
-                    color_continuous_scale="Viridis_r",
-                    range_color=(0, 100),
+                    color_continuous_scale="YlGnBu",
+                    range_color=(10, 40),
                     )
         fig.write_image(outpath + 'negative_percent_usa.png')
         
