@@ -50,13 +50,13 @@ Main technolohies:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-<h3>Front-end:</h3>
+### Front-end
 
-### Prerequisites
+#### Prerequisites
 
 Download React.js
 
-### Start Commend:
+#### Start Commend:
 
 In Frond-end folder:
 
