@@ -70,8 +70,8 @@ Start Back-end service in port 5000:
    ```
 
 ### Repo Directory
-|Directory  |Description|
-|-|-|-|
+|Directory|Description|
+|-|-|
 |Dataprep|Twitter data collection scripts.|
 |Dataset|All datasets in project. <br/>Datasets with suffix 'labeled' are datasets labeled by model.|
 |Eda|Data cleaning, eda and image generation scripts.|
