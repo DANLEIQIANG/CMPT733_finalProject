@@ -70,19 +70,12 @@ Start Back-end service in port 5000:
    ```
 
 ### Repo Directory
-|第一列|第二列|第三列|
+|Directory|Description|
 |-|-|-|
-|111|222|333|
-|111111111111111111111111111|22222222222222222222222222222222222222222222|3333333333333333333333333333333|
-
-
-<!-- USAGE EXAMPLES -->
-## Show Demo:
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+|Dataprep|Twitter data collection scripts.|
+|Dataset|All datasets in project. <br/>Datasets with suffix 'labeled' are datasets labeled by model.|
+|Eda|Data cleaning, eda and image generation scripts.|
+|Model|Machine learning models.|
+|Frontend|Web application frontend.|
+|Backend|Web application backend.|
 
