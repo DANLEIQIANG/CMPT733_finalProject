@@ -69,16 +69,13 @@ Start Back-end service in port 5000:
    python model.py
    ```
 
-
-
-
-<!-- USAGE EXAMPLES -->
-## Show Demo:
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+### Repo Directory
+|Directory|Description|
+|-|-|
+|Dataprep|Twitter data collection scripts.|
+|Dataset|All datasets in project. <br/>Datasets with suffix 'labeled' are datasets labeled by model.|
+|Eda|Data cleaning, eda and image generation scripts.|
+|Model|Machine learning models.|
+|Frontend|Web application frontend.|
+|Backend|Web application backend.|
 
