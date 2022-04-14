@@ -64,12 +64,12 @@ Start frond-end service in port 3000:
    ```sh
    npm start
    ```
-<h3>Back-end:</h3>
+### Back-end
 
-### Prerequisites
+#### Prerequisites
 
 Download Flask, MySQL
-### Start Commend:
+#### Start Commend:
 
 In Backer-end folder -> Mock_Server folder -> HelloWorld folder:
 
