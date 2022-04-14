@@ -36,6 +36,15 @@ Main technolohies:
 * [matplotlib](https://jquery.com)
 
 
+### Repo Directory
+|Directory|Description|
+|-|-|
+|Dataprep|Twitter data collection scripts.|
+|Dataset|All datasets in project. <br/>Datasets with suffix 'labeled' are datasets labeled by model.|
+|Eda|Data cleaning, eda and image generation scripts.|
+|Model|Machine learning models.|
+|Frontend|Web application frontend.|
+|Backend|Web application backend.|
 
 
 <!-- GETTING STARTED -->
@@ -68,14 +77,4 @@ Start Back-end service in port 5000:
    ```sh
    python model.py
    ```
-
-### Repo Directory
-|Directory|Description|
-|-|-|
-|Dataprep|Twitter data collection scripts.|
-|Dataset|All datasets in project. <br/>Datasets with suffix 'labeled' are datasets labeled by model.|
-|Eda|Data cleaning, eda and image generation scripts.|
-|Model|Machine learning models.|
-|Frontend|Web application frontend.|
-|Backend|Web application backend.|
 
